@@ -1,13 +1,19 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { DM_Sans, Roboto_Serif } from "next/font/google";
+import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
+const robotoSerif = Roboto_Serif({
+  subsets: ["latin"],
+  variable: "--font-roboto-serif",
+});
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen w-screen flex-col items-center justify-center p-24 ${inter.className}`}
-    >
+    <main className={` ${dmSans.variable} ${robotoSerif.variable}`}>
+      <Navbar />
+      <div className=" font-sans">abcd</div>
+      <div className=" font-serif">abcd</div>
       <div className="text-4xl">Meshllo</div>
       <div>coming soon</div>
     </main>
