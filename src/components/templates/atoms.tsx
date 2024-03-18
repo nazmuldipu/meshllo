@@ -12,6 +12,7 @@ import UIIcon from "../icons/UIIcon";
 import UXIcon from "../icons/UXIcon";
 import WebAppIcon from "../icons/WebAppIcon";
 import WebsiteIcon from "../icons/WebsiteIcon";
+import ServiceCard from "../molecules/ServiceCard";
 
 const Atoms = () => {
   return (
@@ -117,6 +118,10 @@ const Atoms = () => {
           <SVGIcon icon={QuotationIcon} size={40} pathClassName="text-white" />
         </div>
       </div>
+      <h3 className="text-left text-xl font-sans font-bold border-b mt-10 mb-4 border-black">
+        Cards
+      </h3>
+      <ServiceCard />
     </div>
   );
 };

@@ -36,7 +36,7 @@ export default function QuotationIcon(props: Props): JSX.Element {
           y2="14.4422"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#711EE2" />
+          <stop stopColor="#711EE2" />
           <stop offset="1" stop-color="#FF585D" />
         </linearGradient>
       </defs>

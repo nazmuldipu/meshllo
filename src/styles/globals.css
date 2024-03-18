@@ -23,3 +23,29 @@
 .body-rg-20 {
   @apply font-sans text-xl font-normal leading-7 tracking-normal text-left text-secondary;
 }
+.service-card {
+  @apply bg-secondary max-w-80 grid p-7 rounded-2xl;
+}
+.service-card:hover {
+  @apply bg-meshllo cursor-pointer text-secondary;
+}
+.h-20 {
+  @apply font-sans text-xl font-light leading-6 tracking-wide;
+}
+.h-24 {
+  @apply font-serif font-semibold text-2xl leading-7;
+}
+.text-18 {
+  @apply font-sans text-lg font-light leading-6 tracking-wide;
+}
+
+.width-transition {
+  transition: width 2s ease-in;
+}
+.quotation-box {
+  @apply bg-secondary rounded-full flex opacity-0 w-0 text-main-text justify-center items-center h-20;
+  transition: width 2s ease-in;
+}
+.service-card:hover .quotation-box {
+  @apply opacity-100 w-full;
+}
