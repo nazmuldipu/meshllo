@@ -29,11 +29,17 @@
 .service-card:hover {
   @apply bg-meshllo cursor-pointer text-secondary;
 }
-.h-20 {
+.h7-20 {
   @apply font-sans text-xl font-light leading-6 tracking-wide;
 }
-.h-24 {
+.h6-24 {
   @apply font-serif font-semibold text-2xl leading-7;
+}
+.h3-64 {
+  @apply font-serif font-semibold;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0em;
 }
 .text-18 {
   @apply font-sans text-lg font-light leading-6 tracking-wide;

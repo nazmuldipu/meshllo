@@ -25,7 +25,7 @@ const ServiceCard = () => {
         </div>
       </div>
       <div className="pt-7">
-        <h6 className="h-24 text-primary group-hover/service-card:text-white">
+        <h6 className="h6-24 text-primary group-hover/service-card:text-white">
           Custom Software Development
         </h6>
         <div className="text-18">

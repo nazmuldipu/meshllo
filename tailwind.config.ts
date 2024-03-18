@@ -25,6 +25,7 @@ const config: Config = {
         "secondary-text": "var(--secondary-text)",
         "secondary-text-hover": "var(--secondary-text-hover)",
         "accent-text": "var(--accent-text)",
+        tertiary: "var(--tertiary)",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)"],
@@ -33,6 +34,7 @@ const config: Config = {
 
       maxWidth: {
         "430": "107.5rem",
+        "3.5xl": "52rem",
       },
     },
   },

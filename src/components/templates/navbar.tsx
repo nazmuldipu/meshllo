@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="navbar flex justify-center sticky top-0 z-10 px-2 bg-primary">
+    <div className="navbar flex justify-center sticky top-0 z-10 px-2 bg-white">
       <nav className="w-full max-w-430 mx-auto flex flex-row justify-between items-center">
         <Link
           href="/"
@@ -21,9 +21,12 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="hidden md:flex gap-8 flex-row flex-1 h-full justify-center text-secondary text-20">
+        <div className="hidden md:flex gap-8 flex-row flex-1 h-full justify-center text-main-text text-20">
           <Link href="/" className="flex items-center">
             Home
+          </Link>
+          <Link href="/" className="flex items-center">
+            Expertise
           </Link>
           <Link href="/" className="flex items-center">
             Services

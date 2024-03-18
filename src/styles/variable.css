@@ -16,6 +16,7 @@
 
   --text-f: "Inter";
   --title-f: "Inter";
+  --tertiary: #f8c02a;
 
   overflow-y: scroll;
 }
