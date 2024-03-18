@@ -19,3 +19,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.body-rg-20 {
+  @apply font-sans text-xl font-normal leading-7 tracking-normal text-left text-secondary;
+}

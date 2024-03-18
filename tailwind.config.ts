@@ -12,13 +12,19 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        meshllo: "var(--meshllo)",
       },
       colors: {
         primary: "var(--primary)",
-        secondary: "var(--secondary)",
         accent: "var(--accent)",
-        "text-primary": "var(--text-primary)",
-        "text-accent": "var(--text-accent)",
+        secondary: "var(--secondary)",
+        "secondary-hover": "var(--secondary-hover)",
+        border: "var(--border)",
+        "main-text": "var(--main-text)",
+        "main-text-hover": "var(--main-text-hover)",
+        "secondary-text": "var(--secondary-text)",
+        "secondary-text-hover": "var(--secondary-text-hover)",
+        "accent-text": "var(--accent-text)",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)"],

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { DM_Sans, Roboto_Serif } from "next/font/google";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/templates/navbar";
+import Atoms from "@/components/templates/atoms";
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
 const robotoSerif = Roboto_Serif({
@@ -16,6 +17,9 @@ export default function Home() {
       <div className=" font-serif">abcd</div>
       <div className="text-4xl">Meshllo</div>
       <div>coming soon</div>
+      <div>
+        <Atoms />
+      </div>
     </main>
   );
 }
