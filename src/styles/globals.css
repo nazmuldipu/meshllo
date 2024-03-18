@@ -38,6 +38,9 @@
 .text-18 {
   @apply font-sans text-lg font-light leading-6 tracking-wide;
 }
+.text-20 {
+  @apply font-sans text-xl font-light leading-6 tracking-wide;
+}
 
 .width-transition {
   transition: width 2s ease-in;
@@ -48,4 +51,8 @@
 }
 .service-card:hover .quotation-box {
   @apply opacity-100 w-full;
+}
+
+.-translate-y-screen {
+  --tw-translate-y: -100vh;
 }

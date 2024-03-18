@@ -11,13 +11,12 @@ const robotoSerif = Roboto_Serif({
 
 export default function Home() {
   return (
-    <main className={` ${dmSans.variable} ${robotoSerif.variable}`}>
+    <main
+      className={`${dmSans.variable} ${robotoSerif.variable} pt-10 bg-primary`}
+    >
       <Navbar />
-      <div className=" font-sans">abcd</div>
-      <div className=" font-serif">abcd</div>
-      <div className="text-4xl">Meshllo</div>
-      <div>coming soon</div>
-      <div>
+
+      <div className="bg-secondary">
         <Atoms />
       </div>
     </main>

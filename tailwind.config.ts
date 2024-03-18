@@ -30,6 +30,10 @@ const config: Config = {
         sans: ["var(--font-dm-sans)"],
         serif: ["var(--font-roboto-serif)"],
       },
+
+      maxWidth: {
+        "430": "107.5rem",
+      },
     },
   },
   plugins: [],
