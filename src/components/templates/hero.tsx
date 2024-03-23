@@ -1,40 +1,60 @@
+import Image from "next/image";
 import ChevronRightIcon from "../icons/ChevronRightIcon";
 import QuotationIcon from "../icons/QuotationIcon";
 import SVGIcon from "../icons/SVGIcon";
+import style from "@/styles/styles.module.css";
 
 const Hero = () => {
   return (
     <div className=" pt-12 max-w-430 mx-auto px-2">
-      <div className="bg-primary border border-main-text rounded-2xl px-24 pt-36 flex gap-4">
-        <div className="text-white">
-          <div className=" max-w-3.5xl pb-10">
-            <h3 className="h3-64">
-              Ready to take your
-              <span className=" text-accent"> Business Growth </span> to the
-              next level by digitalize your system?
-            </h3>
-            <p className=" text-20 py-10">
-              We are a
-              <span className=" text-tertiary">
-                Global IT Consultant Agency
-              </span>
-              who build high end digital product for Mobile & Web platform with
-              best user experience and latest technology. Lets innovate and grow
-              together.
-            </p>
-            <button className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8">
-              <div className="bg-meshllo w-7 h-7 rounded-full flex justify-center items-center">
-                <SVGIcon
-                  icon={ChevronRightIcon}
-                  size={12}
-                  pathClassName="text-white"
-                />
-              </div>
-              Let’s Connect
-            </button>
-          </div>
+      <div className={style["meshllo__hero-template"]}>
+        <div className={style["meshllo__hero-content"]}>
+          <h3 className={style["meshllo__hero-main-text"]}>
+            Ready to take your
+            <span className="text-accent"> Business Growth </span> to the next
+            level by digitalize your system?
+          </h3>
+          <p className=" md:text-20 py-10">
+            We are a
+            <span className=" text-tertiary">Global IT Consultant Agency</span>
+            who build high end digital product for Mobile & Web platform with
+            best user experience and latest technology. Lets innovate and grow
+            together.
+          </p>
+          <button className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8">
+            <div className="bg-meshllo w-7 h-7 rounded-full flex justify-center items-center">
+              <SVGIcon
+                icon={ChevronRightIcon}
+                size={12}
+                pathClassName="text-white"
+              />
+            </div>
+            Let’s Connect
+          </button>
         </div>
-        <div>images</div>
+        <div className={style["meshllo__hero_image"]}>
+          <Image
+            className=" rounded-3xl opacity-30 absolute top-0 left-0"
+            src="/hero_3.jpg"
+            alt="Hero Image 3"
+            width={500}
+            height={500}
+          />
+          <Image
+            className=" rounded-3xl opacity-50 absolute top-10 left-10"
+            src="/hero_2.jpg"
+            alt="Hero Image 3"
+            width={500}
+            height={500}
+          />
+          <Image
+            className=" rounded-3xl absolute top-20 left-20"
+            src="/hero_3.jpg"
+            alt="Hero Image 3"
+            width={500}
+            height={500}
+          />
+        </div>
       </div>
     </div>
   );

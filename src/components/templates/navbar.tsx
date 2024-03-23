@@ -2,6 +2,7 @@ import Link from "next/link";
 import LogoIcon from "../icons/LogoIcon";
 import SVGIcon from "../icons/SVGIcon";
 import { useState } from "react";
+import CloseIcon from "../icons/CloseIcon";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,8 +43,11 @@ const Navbar = () => {
           Contact Us
         </Link>
         <button
-          className="text-secondary w-10 h-10 md:hidden relative focus:outline-none "
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="text-primary w-10 h-10 md:hidden relative focus:outline-none "
+          onClick={() => {
+            window.scrollTo(0, 0);
+            setIsMenuOpen(true);
+          }}
         >
           <span className="sr-only">Open main menu</span>
           <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -71,13 +75,23 @@ const Navbar = () => {
 
       {/* Mobile view modal nav */}
       <div
-        className={` h-screen-nav w-full absolute top-12 left-0 bg-primary transform transition duration-500 ease-in-out md:hidden ${
+        className={` h-screen w-full fixed top-0 left-0 bg-primary transform transition duration-500 ease-in-out md:hidden ${
           isMenuOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-screen"
         }`}
       >
-        <div className="flex-col flex-1 self-center justify-center mt-7 font-sans text-18 text-secondary">
+        <div className="flex flex-row-reverse p-2">
+          <button
+            className="p-2"
+            onClick={() => {
+              setIsMenuOpen(false);
+            }}
+          >
+            <SVGIcon icon={CloseIcon} pathClassName="text-white" size={28} />
+          </button>
+        </div>
+        <div className="flex-col flex-1 self-center justify-center mt-2 font-sans text-18 text-secondary">
           <Link
             href="/"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -100,7 +114,7 @@ const Navbar = () => {
             About
           </Link>
         </div>
-        <div className=" flex flex-col mt-7 gap-2">a</div>
+        {/* <div className=" flex flex-col mt-7 gap-2">a</div> */}
       </div>
     </div>
   );

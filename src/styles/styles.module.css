@@ -1,0 +1,67 @@
+.meshllo__hero-template {
+  grid-template-areas:
+    "image"
+    "content";
+  display: grid;
+  gap: 1rem;
+  background-color: var(--primary);
+  border: 1px solid var(--main-text);
+  border-radius: 16px;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.meshllo__hero-content {
+  grid-area: content;
+  color: white;
+}
+.meshllo__hero-main-text {
+  font-family: var(--font-roboto-serif);
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+.meshllo__hero_image {
+  grid-area: image;
+  min-width: 35vw;
+  position: relative;
+  min-height: 100vw;
+  margin-right: 80px;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .meshllo__hero-template {
+    grid-template-areas: "content image";
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+  }
+  .meshllo__hero-main-text {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .meshllo__hero_image {
+    min-width: 35vw;
+    min-height: 40vw;
+  }
+}
+/* Laptop */
+@media screen and (min-width: 1024px) {
+}
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .meshllo__hero-template {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 9rem;
+  }
+  .meshllo__hero-main-text {
+    font-size: 64px;
+    line-height: 75px;
+  }
+  .meshllo__hero_image {
+    min-width: 500px;
+    min-height: 35vh;
+  }
+}

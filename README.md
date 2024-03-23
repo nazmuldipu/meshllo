@@ -1,4 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Intro
+This is a website built for www.meshllo.com
+
+### Links
+1. [Figma Design link](https://www.figma.com/proto/XYOCtroKmkTmnyKg0x39V0/Meshllo-brand-materials?page-id=0%3A1&type=design&node-id=427-1841&viewport=318%2C192%2C0.06&t=4wYtzXwOQ6qTOg71-1&scaling=scale-down&starting-point-node-id=427%3A1841)
+
+2. [Dev Server](https://develop.meshllo.com/)
+3. 
+
+### Todo
+⬜️ Render Hero Section
+
+✅
+
 
 ## Getting Started
 
