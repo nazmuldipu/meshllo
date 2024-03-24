@@ -1,3 +1,4 @@
+/* --------------------Hero styles-------------------- */
 .meshllo__hero-template {
   grid-template-areas:
     "image"
@@ -46,9 +47,6 @@
     min-height: 40vw;
   }
 }
-/* Laptop */
-@media screen and (min-width: 1024px) {
-}
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .meshllo__hero-template {
@@ -63,5 +61,59 @@
   .meshllo__hero_image {
     min-width: 500px;
     min-height: 35vh;
+  }
+}
+
+/* --------------------Engagement styles-------------------- */
+.meshllo__engagement-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.meshllo__engagement-image {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meshllo__engagement-lets-talk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  gap: 8px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: var(--accent);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .meshllo__engagement-content {
+    flex-direction: row;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .meshllo__engagement-image {
+    max-width: 400px;
+    flex-shrink: 0;
+  }
+  .meshllo__engagement-lets-talk {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .meshllo__engagement-content {
+    gap: 48px;
+  }
+  .meshllo__engagement-image {
+    max-width: 550px;
   }
 }

@@ -1,12 +1,11 @@
 import Image from "next/image";
 import ChevronRightIcon from "../icons/ChevronRightIcon";
-import QuotationIcon from "../icons/QuotationIcon";
 import SVGIcon from "../icons/SVGIcon";
 import style from "@/styles/styles.module.css";
 
 const Hero = () => {
   return (
-    <div className=" pt-12 max-w-430 mx-auto px-2">
+    <div className=" pt-12 max-w-430 mx-auto px-2 pb-4 md:pb-20">
       <div className={style["meshllo__hero-template"]}>
         <div className={style["meshllo__hero-content"]}>
           <h3 className={style["meshllo__hero-main-text"]}>
