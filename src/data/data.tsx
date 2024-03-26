@@ -106,6 +106,17 @@ const Data = {
       ],
     },
   },
+  aboutUs: {
+    title: "The Core Mission Behind All Our Work",
+    subtitle: "About Us",
+    details:
+      "Meshllo was founded on a core mission: solving problems and empowering people through technology.  We leverage our team of talented software engineers to craft exceptional web, desktop, and mobile applications for businesses of all sizes – startups, emerging companies, and established organizations across the US and Canada.  We believe in being your trusted partner on the path to digital leadership, equipping you to achieve more with less.  Our vision is to become the fastest digital transformation and innovation partner, building a global network of talent to create a lasting positive impact.",
+    dialog: "Want to know more about us?",
+    content: {
+      header: "",
+      data: [],
+    },
+  },
 };
 
 export default Data;

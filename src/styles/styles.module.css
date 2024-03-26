@@ -30,6 +30,13 @@
   min-height: 100vw;
   margin-right: 80px;
 }
+.meshllo__about_image {
+  min-width: 35vw;
+  position: relative;
+  min-height: 95vw;
+  /* min-height: 100vw; */
+  margin-right: 40px;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .meshllo__hero-template {
@@ -46,6 +53,13 @@
     min-width: 35vw;
     min-height: 40vw;
   }
+  .meshllo__about_image {
+    min-width: 35vw;
+    min-height: 35vw;
+    /* position: relative; */
+    /* min-height: 100vw; */
+    margin-right: 80px;
+  }
 }
 /* Desktop */
 @media screen and (min-width: 1280px) {
@@ -59,6 +73,10 @@
     line-height: 75px;
   }
   .meshllo__hero_image {
+    min-width: 500px;
+    min-height: 35vh;
+  }
+  .meshllo__about_image {
     min-width: 500px;
     min-height: 35vh;
   }

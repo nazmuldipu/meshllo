@@ -2,6 +2,7 @@ import Image from "next/image";
 import ChevronRightIcon from "../icons/ChevronRightIcon";
 import SVGIcon from "../icons/SVGIcon";
 import style from "@/styles/styles.module.css";
+import ButtonAnimate from "../molecules/ButtonAnimate";
 
 const Hero = () => {
   return (
@@ -20,7 +21,8 @@ const Hero = () => {
             best user experience and latest technology. Lets innovate and grow
             together.
           </p>
-          <button className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8">
+          <ButtonAnimate text="Let’s Connect" />
+          {/* <button className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8">
             <div className="bg-meshllo w-7 h-7 rounded-full flex justify-center items-center">
               <SVGIcon
                 icon={ChevronRightIcon}
@@ -29,7 +31,7 @@ const Hero = () => {
               />
             </div>
             Let’s Connect
-          </button>
+          </button> */}
         </div>
         <div className={style["meshllo__hero_image"]}>
           <Image
@@ -48,7 +50,7 @@ const Hero = () => {
           />
           <Image
             className=" rounded-3xl absolute top-20 left-20"
-            src="/hero_3.jpg"
+            src="/hero_1.jpg"
             alt="Hero Image 3"
             width={500}
             height={500}

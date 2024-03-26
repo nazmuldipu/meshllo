@@ -3,6 +3,7 @@ import Atoms from "@/components/templates/atoms";
 import Hero from "@/components/templates/hero";
 import Engagement from "@/components/templates/engagement";
 import Services from "@/components/templates/services";
+import AboutUs from "@/components/templates/aboutUs";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Engagement />
       <Services />
+      <AboutUs />
       <div className="bg-secondary">
         <Atoms />
       </div>
