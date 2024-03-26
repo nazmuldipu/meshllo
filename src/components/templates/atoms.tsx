@@ -121,7 +121,7 @@ const Atoms = () => {
       <h3 className="text-left text-xl font-sans font-bold border-b mt-10 mb-4 border-black">
         Cards
       </h3>
-      <ServiceCard />
+      {/* <ServiceCard /> */}
     </div>
   );
 };

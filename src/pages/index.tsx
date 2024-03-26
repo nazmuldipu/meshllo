@@ -1,27 +1,19 @@
-import Image from "next/image";
-import { DM_Sans, Roboto_Serif } from "next/font/google";
 import Navbar from "@/components/templates/navbar";
 import Atoms from "@/components/templates/atoms";
 import Hero from "@/components/templates/hero";
 import Engagement from "@/components/templates/engagement";
-
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
-const robotoSerif = Roboto_Serif({
-  subsets: ["latin"],
-  variable: "--font-roboto-serif",
-});
+import Services from "@/components/templates/services";
 
 export default function Home() {
   return (
-    <main
-      className={`${dmSans.variable} ${robotoSerif.variable} pt-12 bg-white`}
-    >
+    <article className="pt-8 bg-white">
       <Navbar />
       <Hero />
       <Engagement />
+      <Services />
       <div className="bg-secondary">
         <Atoms />
       </div>
-    </main>
+    </article>
   );
 }

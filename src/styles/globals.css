@@ -28,6 +28,9 @@
 }
 .service-card:hover {
   @apply bg-meshllo cursor-pointer text-secondary;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 .h7-20 {
   @apply font-sans text-xl font-light leading-6 tracking-wide;
@@ -42,7 +45,7 @@
   letter-spacing: 0em;
 }
 .text-18 {
-  @apply font-sans text-lg font-light leading-6 tracking-wide;
+  @apply font-sans text-lg font-extralight leading-6 tracking-wide;
 }
 .text-20 {
   @apply font-sans text-xl font-light leading-6 tracking-wide;
@@ -53,12 +56,25 @@
 }
 .quotation-box {
   @apply bg-secondary rounded-full flex opacity-0 w-0 text-main-text justify-center items-center h-20;
-  transition: width 2s ease-in;
 }
 .service-card:hover .quotation-box {
   @apply opacity-100 w-full;
 }
-
 .-translate-y-screen {
   --tw-translate-y: -100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    @apply max-w-60 p-4 rounded-lg;
+  }
+  .quotation-box {
+    @apply h-12;
+  }
+  .h6-24 {
+    @apply text-lg leading-6;
+  }
+  .text-18 {
+    @apply text-base leading-5;
+  }
 }

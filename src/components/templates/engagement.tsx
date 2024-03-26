@@ -1,18 +1,29 @@
 import Data from "@/data/data";
 import SectionHeader from "../molecules/SectionHeader";
 import SVGIcon from "../icons/SVGIcon";
-import DevOpsIcon from "../icons/DevOpsIcon";
 import Image from "next/image";
 import style from "@/styles/styles.module.css";
 import Link from "next/link";
+import DiamondIcon from "../icons/DiamondIcon";
+import UserIcon from "../icons/UserIcon";
 
 const Engagement = () => {
   const data = Data.engagement;
-  console.log(data);
+
+  const getIcon = (icon: string) => {
+    switch (icon) {
+      case "diamond":
+        return DiamondIcon;
+      case "user":
+        return UserIcon;
+      default:
+        return UserIcon;
+    }
+  };
   return (
     <section className="">
       <div className="bg-secondary">
-        <div className="max-w-screen-md xl:max-w-screen-lg mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
+        <div className="max-w-screen-md xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
           <SectionHeader title={data.title} subtitle={data.subtitle} />
           <div className={style["meshllo__engagement-content"]}>
             <div className={style["meshllo__engagement-image"]}>
@@ -54,7 +65,7 @@ const Engagement = () => {
                 >
                   <div className="bg-meshllo w-12 h-12 rounded-full flex justify-center items-center shrink-0">
                     <SVGIcon
-                      icon={DevOpsIcon}
+                      icon={getIcon(item.icon)}
                       size={28}
                       pathClassName="text-white"
                     />
