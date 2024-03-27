@@ -1,4 +1,25 @@
 const Data = {
+  navbar: {
+    logo: "Meshllo",
+    links: [
+      {
+        name: "Home",
+        href: "/",
+      },
+      {
+        name: "Services",
+        href: "/services",
+      },
+      {
+        name: "About Us",
+        href: "/about",
+      },
+      {
+        name: "Contact",
+        href: "/contact",
+      },
+    ],
+  },
   engagement: {
     title: "How Meshllo Works",
     subtitle: "Our Engagement Model",
@@ -116,6 +137,21 @@ const Data = {
       header: "",
       data: [],
     },
+  },
+  footer: {
+    title: "Tired Of Form?",
+    subtitle: "Just leave a message on",
+    copyright: "All rights reserved ®Meshllo Technology",
+    dialog: ", we will contact you.",
+    content: {
+      header: "",
+      data: [],
+    },
+  },
+
+  contact: {
+    email: "support@meshllo.com",
+    phone: "+8801912239643",
   },
 };
 

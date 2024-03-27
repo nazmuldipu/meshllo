@@ -4,6 +4,7 @@ import Hero from "@/components/templates/hero";
 import Engagement from "@/components/templates/engagement";
 import Services from "@/components/templates/services";
 import AboutUs from "@/components/templates/aboutUs";
+import Footer from "@/components/templates/footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="bg-secondary">
         <Atoms />
       </div>
+      <Footer />
     </article>
   );
 }
