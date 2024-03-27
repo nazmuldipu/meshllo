@@ -91,29 +91,17 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex-col flex-1 self-center justify-center mt-2 font-sans text-18 text-secondary">
-          <Link
-            href="/"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex items-center px-10 py-4 hover:bg-secondary hover:text-primary"
-          >
-            Home
-          </Link>
-          <Link
-            href="/"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex items-center px-10 py-4 hover:bg-secondary hover:text-primary"
-          >
-            Services
-          </Link>
-          <Link
-            href="/"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex items-center px-10 py-4 hover:bg-secondary hover:text-primary"
-          >
-            About
-          </Link>
+          {nav.links.map((link, index) => (
+            <Link
+              href={link.href}
+              key={link.href}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="flex items-center px-10 py-4 hover:bg-secondary hover:text-primary"
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
-        {/* <div className=" flex flex-col mt-7 gap-2">a</div> */}
       </div>
     </div>
   );
