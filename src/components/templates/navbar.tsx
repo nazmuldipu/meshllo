@@ -3,9 +3,11 @@ import LogoIcon from "../icons/LogoIcon";
 import SVGIcon from "../icons/SVGIcon";
 import { useState } from "react";
 import CloseIcon from "../icons/CloseIcon";
+import Data from "@/data/data";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const nav = Data.navbar;
 
   return (
     <div className="navbar flex justify-center sticky top-0 z-10 px-2 bg-white">
@@ -23,18 +25,15 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex gap-8 flex-row flex-1 h-full justify-center text-main-text text-20">
-          <Link href="/" className="flex items-center">
-            Home
-          </Link>
-          <Link href="/" className="flex items-center">
-            Expertise
-          </Link>
-          <Link href="/" className="flex items-center">
-            Services
-          </Link>
-          <Link href="/" className="flex items-center">
-            About
-          </Link>
+          {nav.links.map((link, index) => (
+            <Link
+              href={link.href}
+              className="flex items-center"
+              key={link.href}
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
         <Link
           href="/"

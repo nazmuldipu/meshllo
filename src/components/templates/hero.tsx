@@ -6,7 +6,7 @@ import ButtonAnimate from "../molecules/ButtonAnimate";
 
 const Hero = () => {
   return (
-    <div className=" pt-8 max-w-430 mx-auto px-2 pb-4 md:pb-20">
+    <div className=" pt-8 max-w-430 mx-auto px-2 pb-4 md:pb-20" id="home">
       <div className={style["meshllo__hero-template"]}>
         <div className={style["meshllo__hero-content"]}>
           <h3 className={style["meshllo__hero-main-text"]}>

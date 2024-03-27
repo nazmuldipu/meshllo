@@ -4,19 +4,19 @@ const Data = {
     links: [
       {
         name: "Home",
-        href: "/",
+        href: "#home",
+      },
+      {
+        name: "How it works",
+        href: "#engagement",
       },
       {
         name: "Services",
-        href: "/services",
+        href: "#services",
       },
       {
         name: "About Us",
-        href: "/about",
-      },
-      {
-        name: "Contact",
-        href: "/contact",
+        href: "#about",
       },
     ],
   },

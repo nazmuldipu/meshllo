@@ -49,7 +49,7 @@ const Services = () => {
     }
   };
   return (
-    <section className="px-4">
+    <section className="px-4" id="services">
       <div className="bg-white">
         <div className="max-w-screen-md xl:max-w-screen-2xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
           <SectionHeader

@@ -21,7 +21,7 @@ const Engagement = () => {
     }
   };
   return (
-    <section className="">
+    <section className="" id="engagement">
       <div className="bg-secondary">
         <div className="max-w-screen-md xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
           <SectionHeader title={data.title} subtitle={data.subtitle} />

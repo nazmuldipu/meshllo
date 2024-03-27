@@ -7,7 +7,7 @@ import ButtonAnimate from "../molecules/ButtonAnimate";
 const AboutUs = () => {
   const data = Data.aboutUs;
   return (
-    <section className="bg-primary text-white">
+    <section className="bg-primary text-white" id="about">
       <div className="relative max-w-screen-lg xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
         <div className="grid gap-4 md:gap-14 md:grid-cols-2 px-4">
           <div className={style["meshllo__about_image"]}>
