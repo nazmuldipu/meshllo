@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-between py-4">
         <div className="text-center">{data.copyright}</div>
-        <div className="">
+        <div className="hidden md:block">
           <ul className="flex gap-4">
             {nav.links.map((link, index) => (
               <li key={index}>
