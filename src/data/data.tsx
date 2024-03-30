@@ -138,6 +138,93 @@ const Data = {
       data: [],
     },
   },
+  contactUs: {
+    title: "Let your business thrive under our supervision",
+    subtitle: "",
+    details: "",
+    dialog: "",
+    content: {
+      header: "",
+      data: [
+        {
+          icon: "email",
+          title: "Our email",
+          text: "support@meshllo.com",
+        },
+        {
+          icon: "phone",
+          title: "Call us or Whatsapp",
+          text: "+1234567892",
+        },
+        {
+          icon: "location",
+          title: "Meshllo Technology",
+          text: "8/B, Shyamoli Hall Market, Shyamoil, Dhaka- 1207",
+        },
+      ],
+      socials: [
+        {
+          icon: "facebook",
+          title: "Facebook",
+          href: "https://www.facebook.com",
+        },
+        {
+          icon: "linkedin",
+          title: "Linkedin",
+          href: "https://www.facebook.com",
+        },
+        {
+          icon: "instagram",
+          title: "Instagram",
+          href: "https://www.facebook.com",
+        },
+      ],
+    },
+    form: [
+      { name: "first-name", label: "First name", type: "text" },
+      { name: "last-name", label: "Last name", type: "text" },
+      { name: "email", label: "Email", type: "email" },
+      { name: "phone", label: "Phone", type: "phone" },
+      {
+        name: "service",
+        label: "Service You Want ",
+        type: "select",
+        options: [
+          {
+            value: "Custom Software Development",
+            text: "Custom Software Development",
+          },
+          { value: "Cloud Services", text: "Cloud Services" },
+          {
+            value: "Mobile Application Development",
+            text: "Mobile Application Development",
+          },
+          {
+            value: "Web Application Development",
+            text: "Web Application Development",
+          },
+          { value: "Website Development", text: "Website Development" },
+          {
+            value: "User Experience Design (UX)",
+            text: "User Experience Design (UX)",
+          },
+          {
+            value: "User Interface Design (UI)",
+            text: "User Interface Design (UI)",
+          },
+          { value: "DevOps", text: "DevOps" },
+          {
+            value: "Software Quality Assurance",
+            text: "Software Quality Assurance",
+          },
+          { value: "Graphic Design", text: "Graphic Design" },
+          { value: "Digital Marketing", text: "Digital Marketing" },
+          { value: "IT Consulting", text: "IT Consulting" },
+        ],
+      },
+      { name: "message", label: "Message", type: "textarea" },
+    ],
+  },
   footer: {
     title: "Tired Of Form?",
     subtitle: "Just leave a message on",

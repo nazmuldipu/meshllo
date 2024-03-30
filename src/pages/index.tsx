@@ -6,6 +6,7 @@ import Services from "@/components/templates/services";
 import AboutUs from "@/components/templates/aboutUs";
 import Footer from "@/components/templates/footer";
 import Head from "next/head";
+import ContactUs from "@/components/templates/contactUs";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <div className="bg-secondary">
         <Atoms />
       </div>
+      <ContactUs />
       <Footer />
     </article>
   );
