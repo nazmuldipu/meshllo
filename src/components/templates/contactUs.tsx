@@ -37,8 +37,8 @@ const ContactUs = () => {
       background="bg-secondary text-main-text font-sans"
       className=" py-28"
     >
-      <div className="grid lg:grid-cols-2 gap-8">
-        <div className="">
+      <div className="grid lg:grid-cols-5 xl:grid-cols-2 gap-8">
+        <div className="lg:col-span-2 xl:col-span-1">
           <div className="pb-4 border-b border-border">
             <SectionHeader
               title={data.title}
@@ -90,7 +90,7 @@ const ContactUs = () => {
         </div>
         <form
           action=""
-          className="bg-white rounded-2xl p-10 text-main-text font-light"
+          className="bg-white rounded-2xl p-10 text-main-text font-light lg:col-span-3 xl:col-span-1"
         >
           <SVGIcon
             icon={LogoIcon}
