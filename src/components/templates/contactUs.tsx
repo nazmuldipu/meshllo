@@ -35,7 +35,7 @@ const ContactUs = () => {
   return (
     <ContentWrapper
       background="bg-secondary text-main-text font-sans"
-      className=" py-28"
+      className="py-12 md:py-28"
     >
       <div className="grid lg:grid-cols-5 xl:grid-cols-2 gap-8">
         <div className="lg:col-span-2 xl:col-span-1">
@@ -46,10 +46,10 @@ const ContactUs = () => {
               textAlignment="left"
             />
           </div>
-          <div className="py-10 border-b border-border">
+          <div className="py-6 md:py-10 border-b border-border">
             {data.content.data.map((item, index) => (
-              <div key={item.text} className="flex gap-6 py-4">
-                <div className="bg-meshllo w-12 h-12 rounded-full flex justify-center items-center">
+              <div key={item.text} className="flex gap-6 py-3 md:py-4">
+                <div className="bg-meshllo w-12 h-12 rounded-full flex justify-center items-center shrink-0">
                   <SVGIcon
                     icon={getIcon(item.icon)}
                     size={25}
@@ -57,7 +57,7 @@ const ContactUs = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-serif font-bold">
+                  <h3 className="text-lg md:text-2xl font-serif font-bold">
                     {item.title}
                   </h3>
                   <p>{item.text}</p>
@@ -65,11 +65,11 @@ const ContactUs = () => {
               </div>
             ))}
           </div>
-          <div className="py-10">
+          <div className="py-6 md:py-10">
             <h4 className="w-full font-serif text-lg md:text-2xl font-semibold">
               Find Us On
             </h4>
-            <div className="flex gap-4 pt-8">
+            <div className="flex gap-4 pt-4 md:pt-8">
               {data.content.socials.map((item, index) => (
                 <a
                   key={item.title}
@@ -90,7 +90,7 @@ const ContactUs = () => {
         </div>
         <form
           action=""
-          className="bg-white rounded-2xl p-10 text-main-text font-light lg:col-span-3 xl:col-span-1"
+          className="bg-white rounded-2xl p-4 md:p-10 text-main-text font-light lg:col-span-3 xl:col-span-1"
         >
           <SVGIcon
             icon={LogoIcon}
@@ -98,7 +98,7 @@ const ContactUs = () => {
             width={220}
             pathClassName="text-secondary-text"
           />
-          <div className="grid md:grid-cols-2 gap-14 py-10">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-14 py-4 md:py-10">
             {data.form.map((item, index) => (
               <div
                 key={item.name}
