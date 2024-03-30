@@ -25,6 +25,7 @@ const config: Config = {
         "secondary-text": "var(--secondary-text)",
         "secondary-text-hover": "var(--secondary-text-hover)",
         "accent-text": "var(--accent-text)",
+        "accent-light": "var(--accent-light)",
         tertiary: "var(--tertiary)",
       },
       fontFamily: {

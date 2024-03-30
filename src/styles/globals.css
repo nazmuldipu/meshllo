@@ -78,3 +78,16 @@
     @apply text-base leading-5;
   }
 }
+
+.swiper-container {
+  /* change container to overflow visible */
+  overflow: visible;
+  /* add enough padding to account for the shadow */
+  padding: 5px;
+}
+.my-swipe-wrapper {
+  /* add the overflow to the outer wrapper */
+  overflow: hidden;
+  /* add negative margin to counteract the padding */
+  margin: -5px;
+}

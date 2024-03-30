@@ -235,6 +235,41 @@ const Data = {
       data: [],
     },
   },
+  feedback: {
+    title: "Appreciations From Our Client",
+    subtitle: "Success Stories",
+    details: "",
+    dialog: "",
+    content: {
+      header: "",
+      data: [
+        {
+          icon: "AK",
+          title: "Amir Khosrodad",
+          subtitle: "CEO, MyPeople, USA",
+          text: "Just took a stroll through the design, and we are absolutely thrilled with it. Kudos to your team for their exceptional work!",
+        },
+        {
+          icon: "MK",
+          title: "Monish Kumar",
+          subtitle: "Managing Director, Zedandzed It Services Ltd, UK",
+          text: "It’s been a long time I am working with you, I must say you have a great work ethics. Best wishes to your team.",
+        },
+        {
+          icon: "MA",
+          title: "Muammar Ahmad",
+          subtitle: "Managing Director, Zedandzed It Services Ltd, Bangladesh",
+          text: "Impressive services and hope to work with you guys again.",
+        },
+        {
+          icon: "TH",
+          title: "Touhid Hridoy",
+          subtitle: "CEO, Bistriti Architecture, Bangladesh",
+          text: "Great service and team. Love the work you did. Appreciate your professionalism.",
+        },
+      ],
+    },
+  },
   contact: {
     email: "support@meshllo.com",
     phone: "+8801912239643",

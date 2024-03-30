@@ -1,5 +1,4 @@
 import Navbar from "@/components/templates/navbar";
-import Atoms from "@/components/templates/atoms";
 import Hero from "@/components/templates/hero";
 import Engagement from "@/components/templates/engagement";
 import Services from "@/components/templates/services";
@@ -7,6 +6,7 @@ import AboutUs from "@/components/templates/aboutUs";
 import Footer from "@/components/templates/footer";
 import Head from "next/head";
 import ContactUs from "@/components/templates/contactUs";
+import Feedback from "@/components/templates/feedback";
 
 export default function Home() {
   return (
@@ -19,9 +19,7 @@ export default function Home() {
       <Engagement />
       <Services />
       <AboutUs />
-      <div className="bg-secondary">
-        <Atoms />
-      </div>
+      <Feedback />
       <ContactUs />
       <Footer />
     </article>
