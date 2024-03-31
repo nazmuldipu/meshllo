@@ -1,13 +1,13 @@
 import { useRef } from "react";
 import Data from "@/data/data";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import ContentWrapper from "../molecules/ContentWrapper";
-import SectionHeader from "../molecules/SectionHeader";
-
+import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+
+import ContentWrapper from "../molecules/ContentWrapper";
+import SectionHeader from "../molecules/SectionHeader";
 
 import FeedbackCard from "../molecules/FeedbackCard";
 import SVGIcon from "../icons/SVGIcon";
@@ -16,7 +16,7 @@ import LeftIcon from "../icons/LeftIcon";
 
 const Feedback = () => {
   const data = Data.feedback;
-  const swiperRef = useRef();
+  const swiperRef = useRef<SwiperRef>(null);
 
   return (
     <ContentWrapper
@@ -31,6 +31,11 @@ const Feedback = () => {
       />
       <Swiper
         ref={swiperRef}
+        modules={[Navigation]}
+        navigation={{
+          nextEl: ".next",
+          prevEl: ".prev",
+        }}
         slidesPerView={6}
         breakpoints={{
           0: {
@@ -41,9 +46,6 @@ const Feedback = () => {
           },
         }}
         spaceBetween={16}
-        onBeforeInit={(swiper) => {
-          swiperRef.current = swiper;
-        }}
         loop={true}
         className="mySwiper"
       >
@@ -59,10 +61,7 @@ const Feedback = () => {
         ))}
       </Swiper>
       <div className="flex justify-center gap-8 text-white pt-8">
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="bg-tertiary rounded-sm p-4"
-        >
+        <button className="prev bg-tertiary rounded-sm p-4">
           <SVGIcon
             icon={LeftIcon}
             width={27}
@@ -70,10 +69,7 @@ const Feedback = () => {
             pathClassName="text-white"
           />
         </button>
-        <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className="bg-tertiary rounded-sm p-4"
-        >
+        <button className="next bg-tertiary rounded-sm p-4">
           <SVGIcon
             icon={RightIcon}
             width={27}
