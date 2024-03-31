@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ChevronRightIcon from "../icons/ChevronRightIcon";
 import SVGIcon from "../icons/SVGIcon";
 
@@ -6,13 +7,15 @@ interface Props {
 }
 const ButtonAnimate = ({ text }: Props) => {
   return (
-    <button className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8">
+    <Link
+      href="#contact"
+      className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8 w-max"
+    >
       <div className="bg-meshllo w-7 h-7 rounded-full flex justify-center items-center">
         <SVGIcon icon={ChevronRightIcon} size={12} pathClassName="text-white" />
       </div>
       {text}
-      {/* Let’s Connect */}
-    </button>
+    </Link>
   );
 };
 

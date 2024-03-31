@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CustomSoftwareIcon from "../icons/CustomSoftwareIcon";
 import QuotationIcon from "../icons/QuotationIcon";
 import SVGIcon from "../icons/SVGIcon";
@@ -21,16 +22,18 @@ const ServiceCard = ({ title, text, icon }: Props) => {
             <SVGIcon icon={icon} size={30} pathClassName="text-white" />
           </div>
         </span>
-        <div className="quotation-box">
+        <Link href="#contact" className="quotation-box">
+          {/* <div > */}
           <div className="rounded-full flex justify-center items-center">
             <SVGIcon
               icon={QuotationIcon}
               size={50}
               pathClassName="text-white"
             />
+            {/* </div> */}
+            Want Quotation?
           </div>
-          Want Quotation?
-        </div>
+        </Link>
       </div>
       <div className="pt-4 md:pt-7">
         <h6 className="h6-24 text-primary group-hover/service-card:text-white">

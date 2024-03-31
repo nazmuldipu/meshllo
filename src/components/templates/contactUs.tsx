@@ -36,6 +36,7 @@ const ContactUs = () => {
     <ContentWrapper
       background="bg-secondary text-main-text font-sans"
       className="py-12 md:py-28"
+      id="contact"
     >
       <div className="grid lg:grid-cols-5 xl:grid-cols-2 gap-8">
         <div className="lg:col-span-2 xl:col-span-1">

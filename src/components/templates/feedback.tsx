@@ -22,6 +22,7 @@ const Feedback = () => {
     <ContentWrapper
       background="bg-white text-main-text font-sans"
       className="py-10 md:py-16 lg:py-20 "
+      id="feedback"
     >
       <SectionHeader
         title={data.title}
