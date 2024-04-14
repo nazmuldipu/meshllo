@@ -27,7 +27,7 @@
   @apply bg-secondary max-w-80 grid p-7 rounded-2xl;
 }
 .service-card:hover {
-  @apply bg-meshllo cursor-pointer text-secondary;
+  @apply md:bg-meshllo md:text-secondary;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
@@ -58,7 +58,7 @@
   @apply bg-secondary rounded-full flex opacity-0 w-0 text-main-text justify-center items-center h-20;
 }
 .service-card:hover .quotation-box {
-  @apply opacity-100 w-full;
+  @apply md:opacity-100 md:w-full;
 }
 .-translate-y-screen {
   --tw-translate-y: -100vh;
@@ -66,7 +66,7 @@
 
 @media screen and (max-width: 768px) {
   .service-card {
-    @apply max-w-60 p-4 rounded-lg;
+    @apply max-w-72 p-4 rounded-lg;
   }
   .quotation-box {
     @apply h-12;

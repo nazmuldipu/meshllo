@@ -1,25 +1,25 @@
 import Image from "next/image";
-import ChevronRightIcon from "../icons/ChevronRightIcon";
-import SVGIcon from "../icons/SVGIcon";
 import style from "@/styles/styles.module.css";
 import ButtonAnimate from "../molecules/ButtonAnimate";
+import Data from "@/data/data";
+import parse from "html-react-parser";
 
 const Hero = () => {
+  const data = Data.hero;
   return (
     <div className=" pt-8 max-w-430 mx-auto px-2 pb-4 md:pb-20" id="home">
       <div className={style["meshllo__hero-template"]}>
         <div className={style["meshllo__hero-content"]}>
           <h3 className={style["meshllo__hero-main-text"]}>
-            Ready to take your
-            <span className="text-accent"> Business Growth </span> to the next
-            level by digitalize your system?
+            {parse(data.title)}
           </h3>
-          <p className=" md:text-20 py-10">
-            We are a
+          <p className="font-sans md:text-20 py-10 max-w-2xl md:max-w-md lg:max-w-xl 2xl:max-w-3xl ">
+            {parse(data.dialog)}
+            {/* We are a
             <span className=" text-tertiary">Global IT Consultant Agency</span>
             who build high end digital product for Mobile & Web platform with
             best user experience and latest technology. Lets innovate and grow
-            together.
+            together. */}
           </p>
           <ButtonAnimate text="Let’s Connect" />
           {/* <button className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8">

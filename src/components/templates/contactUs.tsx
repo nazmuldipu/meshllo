@@ -39,7 +39,7 @@ const ContactUs = () => {
       id="contact"
     >
       <div className="grid lg:grid-cols-5 xl:grid-cols-2 gap-8">
-        <div className="lg:col-span-2 xl:col-span-1">
+        <div className="order-2 md:order-1 lg:col-span-2 xl:col-span-1">
           <div className="pb-4 border-b border-border">
             <SectionHeader
               title={data.title}
@@ -91,7 +91,7 @@ const ContactUs = () => {
         </div>
         <form
           action=""
-          className="bg-white rounded-2xl p-4 md:p-10 text-main-text font-light lg:col-span-3 xl:col-span-1"
+          className="order-1 md:order-2 bg-white rounded-2xl p-4 md:p-10 text-main-text font-light lg:col-span-3 xl:col-span-1"
         >
           <SVGIcon
             icon={LogoIcon}
@@ -115,7 +115,7 @@ const ContactUs = () => {
                 >
                   {item.label}
                 </label>
-                <div className="mt-2">
+                <div className="">
                   {(item.type === "text" ||
                     item.type === "email" ||
                     item.type === "phone") && (
@@ -127,7 +127,7 @@ const ContactUs = () => {
                     />
                   )}
                   {item.type === "select" && (
-                    <select className="block w-full border-b py-2 text-accent-text">
+                    <select className="block w-full border-b py-2 text-accent-text bg-white">
                       {item.options?.map((option, index) => (
                         <option key={option.value} value={option.value}>
                           {option.text}

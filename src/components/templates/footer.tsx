@@ -13,7 +13,7 @@ const Footer = () => {
       background="bg-primary text-white font-sans"
       className="pt-10 md:pt-16 lg:pt-20 pb-4 "
     >
-      <div className="grid lg:grid-cols-2 gap-6 lg:gap-1 pb-6 border-b">
+      <div className="flex justify-center pb-6 border-b">
         <div className="text-center lg:text-left">
           <h3 className={`${styles["meshllo__title"]} pb-2`}>{data.title}</h3>
           <div className={styles["meshllo__regular-text"]}>
@@ -34,9 +34,9 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center lg:justify-end">
+        {/* <div className="flex justify-center lg:justify-end">
           <SubscribeForm />
-        </div>
+        </div> */}
       </div>
       <div className="flex justify-between py-4">
         <div className="text-center">{data.copyright}</div>

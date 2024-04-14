@@ -10,7 +10,7 @@ const Navbar = () => {
   const nav = Data.navbar;
 
   return (
-    <div className="navbar flex justify-center sticky top-0 z-10 px-2 bg-white">
+    <div className="navbar flex justify-center sticky top-0 z-10 p-2 bg-white shadow">
       <nav className="w-full max-w-430 mx-auto flex flex-row justify-between items-center">
         <Link
           href="/"
@@ -28,7 +28,7 @@ const Navbar = () => {
           {nav.links.map((link, index) => (
             <Link
               href={link.href}
-              className="flex items-center"
+              className="flex items-center hover:text-primary"
               key={link.href}
             >
               {link.name}
@@ -36,10 +36,10 @@ const Navbar = () => {
           ))}
         </div>
         <Link
-          href="/"
-          className="hidden md:flex items-center bg-accent text-20 text-secondary px-4 py-2 rounded-full border border-accent"
+          href={nav.contactUs.href}
+          className="hidden md:flex items-center bg-accent hover:bg-primary text-20 text-secondary px-4 py-2 rounded-full border border-accent"
         >
-          Contact Us
+          {nav.contactUs.name}
         </Link>
         <button
           className="text-primary w-10 h-10 md:hidden relative focus:outline-none "
@@ -52,19 +52,19 @@ const Navbar = () => {
           <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <span
               aria-hidden="true"
-              className={`block absolute w-5 h-px bg-current transform transition duration-500 ease-in-out ${
+              className={`block absolute w-5 h-0.5 bg-current transform transition duration-500 ease-in-out ${
                 isMenuOpen ? "rotate-45" : "-translate-y-1.5"
               }`}
             ></span>
             <span
               aria-hidden="true"
-              className={`block absolute w-4 h-px bg-current transform transition duration-500 ease-in-out ${
+              className={`block absolute w-4 h-0.5 bg-current transform transition duration-500 ease-in-out ${
                 isMenuOpen ? "opacity-0" : ""
               }`}
             ></span>
             <span
               aria-hidden="true"
-              className={`block absolute w-5 h-px bg-current transform transition duration-500 ease-in-out ${
+              className={`block absolute w-5 h-0.5 bg-current transform transition duration-500 ease-in-out ${
                 isMenuOpen ? "-rotate-45" : "translate-y-1.5"
               }`}
             ></span>
@@ -80,7 +80,7 @@ const Navbar = () => {
             : "opacity-0 -translate-y-screen"
         }`}
       >
-        <div className="flex flex-row-reverse p-2">
+        <div className="flex flex-row-reverse pt-9 pb-2 pr-2">
           <button
             className="p-2"
             onClick={() => {
@@ -101,6 +101,15 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          <div className="flex px-10 py-4">
+            <Link
+              href={nav.contactUs.href}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="items-center px-4 py-2 bg-accent rounded-full hover:bg-secondary hover:text-primary"
+            >
+              {nav.contactUs.name}
+            </Link>
+          </div>
         </div>
       </div>
     </div>

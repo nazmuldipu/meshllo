@@ -19,6 +19,24 @@ const Data = {
         href: "#about",
       },
     ],
+    contactUs: {
+      name: "Contact Us",
+      href: "#contact",
+    },
+  },
+  hero: {
+    title:
+      "Ready to unlock <br/> <span className='text-accent'>explosive growth</span> and <br/>propel your company's <br/>digital dominance?",
+    subtitle: "",
+    dialog:
+      "Meshllo is your <span className='text-tertiary'>one-stop shop</span> to supercharge your business  and  revolutionize the digital world! We leverage our elite development squad to turbocharge your digital transformation. Meshllo empowers you to seize the future, today!",
+    details: "",
+    images: [],
+    content: {
+      header: "",
+      data: [],
+    },
+    cta: "Get in touch",
   },
   engagement: {
     title: "How Meshllo Works",
@@ -40,7 +58,7 @@ const Data = {
       },
     ],
     content: {
-      header: "One stop solution to growth & development",
+      header: "One stop solution to \n growth & development",
       data: [
         {
           icon: "diamond",
@@ -54,6 +72,7 @@ const Data = {
         },
       ],
     },
+    cta: "Get in touch",
   },
   services: {
     title: "High-impact Services For Your Business",

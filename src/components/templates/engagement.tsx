@@ -29,39 +29,44 @@ const Engagement = () => {
             <div className={style["meshllo__engagement-image"]}>
               {data.images.map((item, index) => (
                 <div
-                  className={`flex gap-4 ${index % 2 === 0 ? "" : " -mt-20"}`}
+                  className={`flex gap-2 md:gap-4 ${
+                    index % 2 === 0 ? "" : " -mt-20"
+                  }`}
                   key={item.alt}
                 >
                   <Image
-                    className="order-2 rounded-3xl"
+                    className="order-2 rounded-3xl flex-shrink-0 w-3/4"
                     src={item.src}
                     alt="Hero Image 3"
                     width={500}
                     height={500}
                   />
                   <div
-                    className={`flex flex-col items-center justify-center ${
+                    className={`flex flex-col items-center justify-center w-1/4 text-center ${
                       index % 2 === 0 ? "order-3" : "order-1"
                     }`}
                   >
-                    <h3 className="font-serif text-2xl xl:text-6xl font-bold">
+                    <h3 className="font-serif text-2xl xl:text-4xl font-bold">
                       {item.number}
                     </h3>
-                    <div className="font-sans text-sm md:text-base tracking-wide">
+                    <div className="font-sans text-sm md:text-lg tracking-wide">
                       {item.text}
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="px-4">
-              <h3 className="font-serif font-semibold text-primary text-xl lg:text-3xl xl:text-5xl leading-snug tracking-wide">
+            <div className="px-4 flex flex-col justify-center">
+              <h3 className="whitespace-pre-line font-serif font-semibold text-primary text-xl lg:text-2xl xl:text-5xl leading-snug tracking-wide pt-6 md:pt-0">
                 {data.content.header}
+                {/* {data.content.header.split("\n").map((string, i) => (
+                  <div key={`${string + i}`}>{string}</div>
+                ))} */}
               </h3>
               {data.content.data.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row gap-2 xl:gap-4 pt-4 xl:pt-12"
+                  className="flex flex-col md:flex-row gap-2 xl:gap-4 pt-8 xl:pt-12"
                 >
                   <div className="bg-meshllo w-12 h-12 rounded-full flex justify-center items-center shrink-0">
                     <SVGIcon
@@ -93,7 +98,7 @@ const Engagement = () => {
             href="mailto:nazmul@meshllo.com"
             className=" bg-secondary font-sans px-4 py-2 rounded-full mt-6"
           >
-            Email Now
+            {data.cta}
           </Link>
         </div>
       </div>

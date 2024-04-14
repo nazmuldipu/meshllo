@@ -18,28 +18,34 @@ const ServiceCard = ({ title, text, icon }: Props) => {
           </div>
         </span>
         <span className="md:hidden">
-          <div className="bg-meshllo w-12 h-12 rounded-full flex justify-center items-center group-hover/service-card:hidden">
+          <div className="bg-meshllo w-12 h-12 rounded-full flex justify-center items-center md:group-hover/service-card:hidden">
             <SVGIcon icon={icon} size={30} pathClassName="text-white" />
           </div>
         </span>
         <Link href="#contact" className="quotation-box">
-          {/* <div > */}
           <div className="rounded-full flex justify-center items-center">
             <SVGIcon
               icon={QuotationIcon}
               size={50}
               pathClassName="text-white"
             />
-            {/* </div> */}
             Want Quotation?
           </div>
         </Link>
       </div>
       <div className="pt-4 md:pt-7">
-        <h6 className="h6-24 text-primary group-hover/service-card:text-white">
+        <h6 className="h6-24 text-primary md:group-hover/service-card:text-white">
           {title}
         </h6>
         <div className="text-18 pt-4">{text}</div>
+        <div className="md:hidden w-full pt-5 pb-3">
+          <Link
+            href="#contact"
+            className="flex justify-center items-center px-4 py-2 bg-accent hover:bg-primary  text-white font-sans font-light rounded-full"
+          >
+            Want Quotation?
+          </Link>
+        </div>
       </div>
     </div>
   );

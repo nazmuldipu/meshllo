@@ -39,16 +39,17 @@ const SectionHeader = ({
         >
           {title}
         </h2>
+
+        {details && (
+          <p
+            className={`font-sans ${getTextAlignment(
+              textAlignment
+            )} text-sm md:text-base pt-4 md:pt-6 lg:pt-8`}
+          >
+            {details}
+          </p>
+        )}
       </div>
-      {details && (
-        <p
-          className={`font-sans ${getTextAlignment(
-            textAlignment
-          )} text-sm md:text-base pt-4 md:pt-6 lg:pt-8`}
-        >
-          {details}
-        </p>
-      )}
     </div>
   );
 };
