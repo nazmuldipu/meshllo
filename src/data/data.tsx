@@ -263,10 +263,10 @@ const Data = {
       header: "",
       data: [
         {
-          icon: "AK",
-          title: "Amir Khosrodad",
+          icon: "BM",
+          title: "Brian P. Magrann",
           subtitle: "CEO, MyPeople, USA",
-          text: "Just took a stroll through the design, and we are absolutely thrilled with it. Kudos to your team for their exceptional work!",
+          text: "We are delight to work with Meshllo. Just took a stroll through the design, and we are absolutely thrilled with it. Kudos to your team for their exceptional work!",
         },
         {
           icon: "MK",
