@@ -265,7 +265,7 @@ const Data = {
         {
           icon: "BM",
           title: "Brian P. Magrann",
-          subtitle: "CEO, MyPeople, USA",
+          subtitle: "CEO, Boilerplate, USA",
           text: "We are delight to work with Meshllo. Just took a stroll through the design, and we are absolutely thrilled with it. Kudos to your team for their exceptional work!",
         },
         {
