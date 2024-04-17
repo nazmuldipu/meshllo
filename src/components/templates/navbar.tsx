@@ -1,16 +1,38 @@
 import Link from "next/link";
 import LogoIcon from "../icons/LogoIcon";
 import SVGIcon from "../icons/SVGIcon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CloseIcon from "../icons/CloseIcon";
 import Data from "@/data/data";
 
 const Navbar = () => {
+  const [shadow, setShadow] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const nav = Data.navbar;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 32) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navbar flex justify-center sticky top-0 z-10 p-2 bg-white shadow">
+    <div
+      className={`navbar flex justify-center sticky top-0 z-10 p-2 bg-white ${
+        shadow ? "shadow" : ""
+      }`}
+    >
       <nav className="w-full max-w-430 mx-auto flex flex-row justify-between items-center">
         <Link
           href="/"
@@ -37,7 +59,7 @@ const Navbar = () => {
         </div>
         <Link
           href={nav.contactUs.href}
-          className="hidden md:flex items-center bg-accent hover:bg-primary text-20 text-secondary px-4 py-2 rounded-full border border-accent"
+          className="hidden md:flex items-center bg-accent hover:bg-meshllo text-20 text-secondary px-4 py-2 rounded-full  cursor-pointer"
         >
           {nav.contactUs.name}
         </Link>
@@ -105,7 +127,7 @@ const Navbar = () => {
             <Link
               href={nav.contactUs.href}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="items-center px-4 py-2 bg-accent rounded-full hover:bg-secondary hover:text-primary"
+              className="items-center px-4 py-2 bg-accent rounded-full hover:bg-secondary hover:text-primary cursor-pointer"
             >
               {nav.contactUs.name}
             </Link>

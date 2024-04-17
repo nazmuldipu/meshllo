@@ -1,3 +1,4 @@
+import parse from "html-react-parser";
 interface Props {
   title: string;
   subtitle: string;
@@ -35,9 +36,9 @@ const SectionHeader = ({
         <h2
           className={`font-serif font-semibold ${getTextAlignment(
             textAlignment
-          )} w-full text-2xl md:text-4xl lg:text-5xl xl:text-6xl pt-2 md:pt-4 lg:pt-6`}
+          )} w-full text-2xl md:text-4xl lg:text-5xl xl:text-6xl pt-2 md:pt-4 lg:pt-6 !leading-snug`}
         >
-          {title}
+          {parse(title)}
         </h2>
 
         {details && (

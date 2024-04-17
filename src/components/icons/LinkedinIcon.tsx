@@ -46,8 +46,8 @@ export default function LinkedinIcon(props: Props): JSX.Element {
           y2="24.8844"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#711EE2" />
-          <stop offset="1" stop-color="#FF585D" />
+          <stop stopColor="#711EE2" />
+          <stop offset="1" stopColor="#FF585D" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_557_2133"
@@ -57,8 +57,8 @@ export default function LinkedinIcon(props: Props): JSX.Element {
           y2="27.3117"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#711EE2" />
-          <stop offset="1" stop-color="#FF585D" />
+          <stop stopColor="#711EE2" />
+          <stop offset="1" stopColor="#FF585D" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_557_2133"
@@ -68,8 +68,8 @@ export default function LinkedinIcon(props: Props): JSX.Element {
           y2="19.7069"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#711EE2" />
-          <stop offset="1" stop-color="#FF585D" />
+          <stop stopColor="#711EE2" />
+          <stop offset="1" stopColor="#FF585D" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_557_2133"
@@ -79,8 +79,8 @@ export default function LinkedinIcon(props: Props): JSX.Element {
           y2="25.3721"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#711EE2" />
-          <stop offset="1" stop-color="#FF585D" />
+          <stop stopColor="#711EE2" />
+          <stop offset="1" stopColor="#FF585D" />
         </linearGradient>
       </defs>
     </svg>

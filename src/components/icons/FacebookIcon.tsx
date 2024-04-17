@@ -35,8 +35,8 @@ export default function FacebookIcon(props: Props): JSX.Element {
           y2="24.8844"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#711EE2" />
-          <stop offset="1" stop-color="#FF585D" />
+          <stop stopColor="#711EE2" />
+          <stop offset="1" stopColor="#FF585D" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_557_2125"
@@ -46,8 +46,8 @@ export default function FacebookIcon(props: Props): JSX.Element {
           y2="24.75"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#711EE2" />
-          <stop offset="1" stop-color="#FF585D" />
+          <stop stopColor="#711EE2" />
+          <stop offset="1" stopColor="#FF585D" />
         </linearGradient>
       </defs>
     </svg>

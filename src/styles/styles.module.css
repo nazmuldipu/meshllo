@@ -33,7 +33,9 @@
 .meshllo__about_image {
   min-width: 35vw;
   position: relative;
-  min-height: 95vw;
+  height: 380px;
+  align-self: center;
+  /* min-height: 95vw; */
   /* min-height: 100vw; */
   margin-right: 40px;
 }
@@ -73,9 +75,9 @@
   }
   .meshllo__about_image {
     min-width: 35vw;
-    min-height: 35vw;
-    /* position: relative; */
-    /* min-height: 100vw; */
+    /* min-height: 35vw; */
+    height: 350px;
+
     margin-right: 80px;
   }
 }
@@ -108,7 +110,9 @@
   }
   .meshllo__about_image {
     min-width: 500px;
-    min-height: 35vh;
+    min-height: 5vh;
+    height: 580px;
+    align-self: center;
   }
 }
 @media screen and (min-width: 1536px) {
@@ -127,9 +131,17 @@
   padding-bottom: 40px;
 }
 .meshllo__engagement-image {
-  max-width: 300px;
+  max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+.meshllo__engagement-image img {
+  max-width: 300px;
+  max-height: 430px;
+  width: 70vw;
+  height: calc(70vw * 1.4375);
+  border-radius: 20px;
 }
 
 .meshllo__engagement-lets-talk {
@@ -153,8 +165,13 @@
     padding-right: 16px;
   }
   .meshllo__engagement-image {
-    max-width: 400px;
+    max-width: 350px;
     flex-shrink: 0;
+  }
+  .meshllo__engagement-image img {
+    width: 200px;
+    height: 287px;
+    border-radius: 20px;
   }
   .meshllo__engagement-lets-talk {
     padding-left: 60px;
@@ -168,7 +185,11 @@
     gap: 48px;
   }
   .meshllo__engagement-image {
-    max-width: 550px;
+    max-width: 500px;
+  }
+  .meshllo__engagement-image img {
+    width: 286px;
+    height: 345px;
   }
 }
 

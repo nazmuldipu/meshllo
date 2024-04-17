@@ -7,7 +7,7 @@ const Data = {
         href: "#home",
       },
       {
-        name: "How it works",
+        name: "How It Works",
         href: "#engagement",
       },
       {
@@ -20,7 +20,7 @@ const Data = {
       },
     ],
     contactUs: {
-      name: "Contact Us",
+      name: "Contact Now",
       href: "#contact",
     },
   },
@@ -45,16 +45,16 @@ const Data = {
     details: "",
     images: [
       {
-        src: "/engagement_2.jpg",
-        alt: "engagement_2",
+        src: "/engagement_3.jpg",
+        alt: "engagement_3",
         number: "100+",
-        text: "Projects Completed",
+        text: "Projects <br /> Completed",
       },
       {
-        src: "/engagement_1.jpg",
-        alt: "engagement_1",
+        src: "/engagement_4.jpg",
+        alt: "engagement_4",
         number: "50+",
-        text: "Client Onboard",
+        text: "Client <br /> Onboard",
       },
     ],
     content: {
@@ -158,7 +158,7 @@ const Data = {
     },
   },
   contactUs: {
-    title: "Let your business thrive under our supervision",
+    title: "Let your business <br/> thrive under our <br/>supervision",
     subtitle: "",
     details: "",
     dialog: "",

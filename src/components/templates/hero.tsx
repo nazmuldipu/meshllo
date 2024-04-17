@@ -7,7 +7,10 @@ import parse from "html-react-parser";
 const Hero = () => {
   const data = Data.hero;
   return (
-    <div className=" pt-8 max-w-430 mx-auto px-2 pb-4 md:pb-20" id="home">
+    <div
+      className="pt-8 md:pt-12 max-w-430 mx-auto px-2 pb-4 md:pb-20 lg:pb-32 xl:pb-40"
+      id="home"
+    >
       <div className={style["meshllo__hero-template"]}>
         <div className={style["meshllo__hero-content"]}>
           <h3 className={style["meshllo__hero-main-text"]}>
@@ -15,11 +18,6 @@ const Hero = () => {
           </h3>
           <p className="font-sans md:text-20 py-10 max-w-2xl md:max-w-md lg:max-w-xl 2xl:max-w-3xl ">
             {parse(data.dialog)}
-            {/* We are a
-            <span className=" text-tertiary">Global IT Consultant Agency</span>
-            who build high end digital product for Mobile & Web platform with
-            best user experience and latest technology. Lets innovate and grow
-            together. */}
           </p>
           <ButtonAnimate text="Let’s Connect" />
           {/* <button className="bg-secondary text-main-text text-20 px-6 py-3 rounded-full flex gap-2 items-center my-8">

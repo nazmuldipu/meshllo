@@ -6,6 +6,7 @@ import style from "@/styles/styles.module.css";
 import Link from "next/link";
 import DiamondIcon from "../icons/DiamondIcon";
 import UserIcon from "../icons/UserIcon";
+import parse from "html-react-parser";
 
 const Engagement = () => {
   const data = Data.engagement;
@@ -23,7 +24,7 @@ const Engagement = () => {
   return (
     <section className="" id="engagement">
       <div className="bg-secondary">
-        <div className="max-w-screen-md xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
+        <div className="max-w-screen-md xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-48">
           <SectionHeader title={data.title} subtitle={data.subtitle} />
           <div className={style["meshllo__engagement-content"]}>
             <div className={style["meshllo__engagement-image"]}>
@@ -35,22 +36,25 @@ const Engagement = () => {
                   key={item.alt}
                 >
                   <Image
-                    className="order-2 rounded-3xl flex-shrink-0 w-3/4"
+                    className="order-2 rounded-3xl flex-shrink-0"
                     src={item.src}
+                    style={{
+                      objectFit: "cover",
+                    }}
                     alt="Hero Image 3"
-                    width={500}
-                    height={500}
+                    width={286}
+                    height={345}
                   />
                   <div
                     className={`flex flex-col items-center justify-center w-1/4 text-center ${
                       index % 2 === 0 ? "order-3" : "order-1"
                     }`}
                   >
-                    <h3 className="font-serif text-2xl xl:text-4xl font-bold">
+                    <h3 className="font-serif text-2xl xl:text-6xl font-bold">
                       {item.number}
                     </h3>
                     <div className="font-sans text-sm md:text-lg tracking-wide">
-                      {item.text}
+                      {parse(item.text)}
                     </div>
                   </div>
                 </div>
@@ -89,7 +93,7 @@ const Engagement = () => {
           </div>
         </div>
       </div>
-      <div className="-mt-28 md:-mt-24 lg:-mt-20 xl: px-4 max-w-screen-md xl:max-w-screen-lg mx-auto">
+      <div className="-mt-28 md:-mt-24 lg:-mt-28 xl: px-4 max-w-screen-md xl:max-w-screen-xl mx-auto">
         <div className={style["meshllo__engagement-lets-talk"]}>
           <h3 className="font-serif font-semibold text-xl md:text-3xl xl:text-5xl text-white text-center">
             {data.dialog}
