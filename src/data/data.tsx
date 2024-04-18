@@ -210,7 +210,7 @@ const Data = {
         type: "select",
         options: [
           {
-            value: null,
+            value: "",
             text: "Select ...",
           },
           {
