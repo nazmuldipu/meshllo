@@ -23,10 +23,10 @@ const ServiceCard = ({ title, text, icon }: Props) => {
           </div>
         </span>
         <Link href="#contact" className="quotation-box">
-          <div className="rounded-full flex justify-center items-center">
+          <div className="rounded-full flex justify-center items-center gap-2 font-sans">
             <SVGIcon
               icon={QuotationIcon}
-              size={50}
+              size={28}
               pathClassName="text-white"
             />
             Want Quotation?

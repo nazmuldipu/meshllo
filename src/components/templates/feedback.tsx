@@ -62,7 +62,7 @@ const Feedback = () => {
         ))}
       </Swiper>
       <div className="flex justify-center gap-8 text-white pt-8">
-        <button className="prev bg-tertiary rounded-sm p-4">
+        <button className="prev bg-tertiary rounded-sm p-4 hover:bg-meshllo">
           <SVGIcon
             icon={LeftIcon}
             width={27}
@@ -70,7 +70,7 @@ const Feedback = () => {
             pathClassName="text-white"
           />
         </button>
-        <button className="next bg-tertiary rounded-sm p-4">
+        <button className="next bg-tertiary rounded-sm p-4 hover:bg-meshllo">
           <SVGIcon
             icon={RightIcon}
             width={27}

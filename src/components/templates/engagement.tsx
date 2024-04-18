@@ -61,7 +61,7 @@ const Engagement = () => {
               ))}
             </div>
             <div className="px-4 flex flex-col justify-center">
-              <h3 className="whitespace-pre-line font-serif font-semibold text-primary text-xl lg:text-2xl xl:text-5xl leading-snug tracking-wide pt-6 md:pt-0">
+              <h3 className="whitespace-pre-line font-serif font-semibold text-primary text-2xl lg:text-2xl xl:text-5xl leading-snug tracking-wide pt-6 md:pt-0">
                 {data.content.header}
                 {/* {data.content.header.split("\n").map((string, i) => (
                   <div key={`${string + i}`}>{string}</div>
@@ -80,10 +80,10 @@ const Engagement = () => {
                     />
                   </div>
                   <div className="text-main-text">
-                    <h4 className="text-lg lg:text-xl xl:text-2xl font-semibold xl:mb-2">
+                    <h4 className="text-xl lg:text-xl xl:text-2xl font-semibold xl:mb-2 font-serif">
                       {item.title}
                     </h4>
-                    <p className="font-sans text-sm lg:text-base xl:text-lg">
+                    <p className="font-sans text-base lg:text-base xl:text-lg pt-2">
                       {item.text}
                     </p>
                   </div>
@@ -93,17 +93,16 @@ const Engagement = () => {
           </div>
         </div>
       </div>
-      <div className="-mt-28 md:-mt-24 lg:-mt-28 xl: px-4 max-w-screen-md xl:max-w-screen-xl mx-auto">
+      <div className="-mt-40 md:-mt-24 lg:-mt-28 xl: px-4 max-w-screen-md xl:max-w-screen-xl mx-auto">
         <div className={style["meshllo__engagement-lets-talk"]}>
-          <h3 className="font-serif font-semibold text-xl md:text-3xl xl:text-5xl text-white text-center">
+          <h3 className="font-serif font-semibold text-xl md:text-3xl xl:text-5xl xl:leading-snug text-white text-center">
             {data.dialog}
           </h3>
-          <Link
-            href="mailto:nazmul@meshllo.com"
-            className=" bg-secondary font-sans px-4 py-2 rounded-full mt-6"
-          >
-            {data.cta}
-          </Link>
+          <div className="bg-secondary text-xl font-medium font-sans px-8 py-2 rounded-full mt-6">
+            <Link href="mailto:nazmul@meshllo.com" className="text-meshllo">
+              {data.cta}
+            </Link>
+          </div>
         </div>
       </div>
     </section>

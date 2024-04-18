@@ -50,14 +50,14 @@ const Services = () => {
   };
   return (
     <section className="px-4" id="services">
-      <div className="bg-white">
-        <div className="max-w-screen-md xl:max-w-screen-2xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
+      <div className="bg-white pt-12 md:pt-0">
+        <div className="max-w-screen-md xl:max-w-screen-2xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-12 md:pb-24">
           <SectionHeader
             details={data.details}
             title={data.title}
             subtitle={data.subtitle}
           />
-          <div className="flex flex-wrap gap-8 justify-center py-20">
+          <div className="flex flex-wrap gap-8 justify-center py-10 md:py-20">
             {data.content.data.map((item, index) => (
               <ServiceCard
                 key={item.text}

@@ -21,8 +21,7 @@ const Footer = () => {
               {data.subtitle}{" "}
               <Link href={`mailto:${contact.email}`} className=" text-accent">
                 {contact.email}
-              </Link>
-              <br />
+              </Link>{" "}
               or{" "}
               <Link
                 href={`https://wa.me/${contact.phone}`}

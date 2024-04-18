@@ -145,13 +145,13 @@ const ContactUs = () => {
                 </div>
               </div>
             ))}
+            <button
+              className="bg-meshllo text-xl font-medium font-sans text-white py-3 px-14 rounded-full"
+              type="submit"
+            >
+              Submit
+            </button>
           </div>
-          <button
-            className="bg-meshllo text-lg text-white py-3 px-6 rounded-full"
-            type="submit"
-          >
-            Submit
-          </button>
         </form>
       </div>
     </ContentWrapper>

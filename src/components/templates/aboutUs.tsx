@@ -40,7 +40,7 @@ const AboutUs = () => {
               details={data.details}
               textAlignment="left"
             />
-            <p className="font-sans font-semibold text-tertiary text-base md:text-xl pt-4 md:pt-6 lg:pt-8">
+            <p className="font-sans font-semibold text-tertiary text-base md:text-2xl pt-4 md:pt-6 lg:pt-8">
               {data.dialog}
             </p>
             <ButtonAnimate text="Download Here" />

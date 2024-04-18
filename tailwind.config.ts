@@ -18,6 +18,7 @@ const config: Config = {
         primary: "var(--primary)",
         accent: "var(--accent)",
         secondary: "var(--secondary)",
+        "secondary-8": "var(--secondary-8)",
         "secondary-hover": "var(--secondary-hover)",
         border: "var(--border)",
         "main-text": "var(--main-text)",
@@ -32,7 +33,9 @@ const config: Config = {
         sans: ["var(--font-dm-sans)"],
         serif: ["var(--font-roboto-serif)"],
       },
-
+      fontSize: {
+        "6.5xl": "4rem",
+      },
       maxWidth: {
         "430": "107.5rem",
         "3.5xl": "52rem",

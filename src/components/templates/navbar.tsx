@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div
       className={`navbar flex justify-center sticky top-0 z-10 p-2 bg-white ${
-        shadow ? "shadow" : ""
+        shadow ? "shadow py-4" : ""
       }`}
     >
       <nav className="w-full max-w-430 mx-auto flex flex-row justify-between items-center">
@@ -123,15 +123,13 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <div className="flex px-10 py-4">
-            <Link
-              href={nav.contactUs.href}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="items-center px-4 py-2 bg-accent rounded-full hover:bg-secondary hover:text-primary cursor-pointer"
-            >
-              {nav.contactUs.name}
-            </Link>
-          </div>
+          <Link
+            href={nav.contactUs.href}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="flex items-center px-10 py-4 hover:bg-secondary hover:text-primary"
+          >
+            {nav.contactUs.name}
+          </Link>
         </div>
       </div>
     </div>

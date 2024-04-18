@@ -36,7 +36,7 @@ const SectionHeader = ({
         <h2
           className={`font-serif font-semibold ${getTextAlignment(
             textAlignment
-          )} w-full text-2xl md:text-4xl lg:text-5xl xl:text-6xl pt-2 md:pt-4 lg:pt-6 !leading-snug`}
+          )} w-full text-2xl md:text-4xl lg:text-5xl xl:text-6.5xl pt-2 md:pt-4 lg:pt-6 !leading-snug`}
         >
           {parse(title)}
         </h2>
@@ -45,7 +45,7 @@ const SectionHeader = ({
           <p
             className={`font-sans ${getTextAlignment(
               textAlignment
-            )} text-sm md:text-base pt-4 md:pt-6 lg:pt-8`}
+            )} text-sm md:text-xl pt-4 md:pt-6 lg:pt-8`}
           >
             {details}
           </p>
