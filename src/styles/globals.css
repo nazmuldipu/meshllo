@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+@import "./variable.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,12 +20,80 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.body-rg-20 {
+  @apply font-sans text-xl font-normal leading-7 tracking-normal text-left text-secondary;
+}
+.service-card {
+  @apply bg-secondary max-w-80 grid p-7 rounded-2xl;
+}
+.service-card:hover {
+  @apply md:bg-meshllo md:text-secondary;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+.h7-20 {
+  @apply font-sans text-xl font-light leading-6 tracking-wide;
+}
+.h6-24 {
+  @apply font-serif font-semibold text-2xl leading-7;
+}
+.h3-64 {
+  @apply font-serif font-semibold;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0em;
+}
+.text-18 {
+  @apply font-sans text-lg font-extralight leading-6 tracking-wide;
+}
+.text-20 {
+  @apply font-sans text-xl font-light leading-6 tracking-wide;
+}
+
+.width-transition {
+  transition: width 2s ease-in;
+}
+.quotation-box {
+  @apply bg-secondary rounded-full flex opacity-0 w-0 text-main-text justify-center items-center h-20;
+}
+.service-card:hover .quotation-box {
+  @apply md:opacity-100 md:w-full;
+}
+.-translate-y-screen {
+  --tw-translate-y: -100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    @apply max-w-72 p-4 rounded-lg;
+  }
+  .quotation-box {
+    @apply h-12;
+  }
+  .h6-24 {
+    @apply text-lg leading-6;
+  }
+  .text-18 {
+    @apply text-base leading-5;
+  }
+}
+
+.swiper-container {
+  /* change container to overflow visible */
+  overflow: visible;
+  /* add enough padding to account for the shadow */
+  padding: 5px;
+}
+.my-swipe-wrapper {
+  /* add the overflow to the outer wrapper */
+  overflow: hidden;
+  /* add negative margin to counteract the padding */
+  margin: -5px;
+}
+
+.text-meshllo:hover {
+  background: -webkit-linear-gradient(0deg, #711ee2 0%, #ff585d 100.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

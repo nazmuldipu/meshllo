@@ -1,0 +1,23 @@
+:root {
+  --meshllo: linear-gradient(90deg, #711ee2 0%, #ff585d 100.14%);
+
+  --primary: #711ee2;
+  --accent: #ff585d;
+
+  --secondary: #f7f9fb;
+  --secondary-hover: #b1b3bd;
+  --secondary-8: #60c4c5;
+  --border: #b1b3bd;
+
+  --main-text: #0c0c0c;
+  --main-text-hover: #1c1c1c;
+  --secondary-text: #1c1c1c;
+  --secondary-text-hover: #5e6177;
+  --accent-text: #5e6177;
+  --accent-light: #c4c5cd;
+  --text-f: "Inter";
+  --title-f: "Inter";
+  --tertiary: #f8c02a;
+
+  overflow-y: scroll;
+}
