@@ -43,7 +43,11 @@ const AboutUs = () => {
             <p className="font-sans font-semibold text-tertiary text-base md:text-2xl pt-4 md:pt-6 lg:pt-8">
               {data.dialog}
             </p>
-            <ButtonAnimate text="Download Here" />
+            <ButtonAnimate
+              text="Download Here"
+              href="/Meshllo_Profile.pdf"
+              target="_blanks"
+            />
           </article>
         </div>
       </div>
