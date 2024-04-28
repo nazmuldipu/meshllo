@@ -33,22 +33,8 @@ const Hero = () => {
         </div>
         <div className={style["meshllo__hero_image"]}>
           <Image
-            className=" rounded-3xl opacity-30 absolute top-0 left-0"
-            src="/hero_3.jpg"
-            alt="Hero Image 3"
-            width={500}
-            height={500}
-          />
-          <Image
-            className=" rounded-3xl opacity-50 absolute top-10 left-10"
-            src="/hero_2.jpg"
-            alt="Hero Image 3"
-            width={500}
-            height={500}
-          />
-          <Image
-            className=" rounded-3xl absolute top-20 left-20"
-            src="/hero_1.jpg"
+            className=" rounded-3xl absolute top-0 left-0 w-full"
+            src="/home.png"
             alt="Hero Image 3"
             width={500}
             height={500}

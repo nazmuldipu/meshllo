@@ -43,20 +43,15 @@ const Data = {
     subtitle: "Our Engagement Model",
     dialog: "Want to know more? Leave us a message and we will call you.",
     details: "",
-    images: [
-      {
-        src: "/engagement_3.jpg",
-        alt: "engagement_3",
-        number: "100+",
-        text: "Projects <br /> Completed",
-      },
-      {
-        src: "/engagement_4.jpg",
-        alt: "engagement_4",
-        number: "50+",
-        text: "Client <br /> Onboard",
-      },
+    info: [
+      { number: "100+", text: "Projects Completed" },
+      { number: "50+", text: "Clients Onboarded" },
     ],
+    image: {
+      src: "/engagement.png",
+      alt: "engagement",
+    },
+
     content: {
       header: "One stop solution to \n growth & development",
       data: [
