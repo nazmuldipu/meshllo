@@ -23,6 +23,13 @@
 .body-rg-20 {
   @apply font-sans text-xl font-normal leading-7 tracking-normal text-left text-secondary;
 }
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
+  grid-gap: 32px;
+  padding: 40px 0;
+  justify-content: center;
+}
 .service-card {
   @apply bg-secondary max-w-80 grid p-7 rounded-2xl;
 }
@@ -66,7 +73,7 @@
 
 @media screen and (max-width: 768px) {
   .service-card {
-    @apply max-w-72 p-4 rounded-lg;
+    @apply max-w-72 p-4 rounded-lg justify-self-center;
   }
   .quotation-box {
     @apply h-12;

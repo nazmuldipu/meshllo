@@ -60,7 +60,7 @@ const Services = () => {
             title={data.title}
             subtitle={data.subtitle}
           />
-          <div className="flex flex-wrap gap-8 py-10 md:py-20">
+          <div className="service-container">
             {data.content.data.map((item, index) => (
               <ServiceCard
                 key={item.text}
