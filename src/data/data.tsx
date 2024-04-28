@@ -43,20 +43,15 @@ const Data = {
     subtitle: "Our Engagement Model",
     dialog: "Want to know more? Leave us a message and we will call you.",
     details: "",
-    images: [
-      {
-        src: "/engagement_3.jpg",
-        alt: "engagement_3",
-        number: "100+",
-        text: "Projects <br /> Completed",
-      },
-      {
-        src: "/engagement_4.jpg",
-        alt: "engagement_4",
-        number: "50+",
-        text: "Client <br /> Onboard",
-      },
+    info: [
+      { number: "100+", text: "Projects Completed" },
+      { number: "50+", text: "Clients Onboarded" },
     ],
+    image: {
+      src: "/engagement.png",
+      alt: "engagement",
+    },
+
     content: {
       header: "One stop solution to \n growth & development",
       data: [
@@ -109,14 +104,9 @@ const Data = {
           text: "Elevate your online presence with website development that ensures your website is a tailored masterpiece, optimized for performance and experience.",
         },
         {
-          icon: "ux",
-          title: "User Experience Design (UX)",
-          text: "We leverage our expert UX personals to guide users effortlessly through your product, maximizing engagement and driving results.",
-        },
-        {
-          icon: "ui",
-          title: "User Interface Design (UI)",
-          text: "We go beyond aesthetics to craft user interfaces that are both captivating and clear.  Colors, intuitive layouts, and a visual hierarchy that guides towards key actions.",
+          icon: "ui-ux",
+          title: "UI & UX Design",
+          text: "We leverage our skilled UX professionals to seamlessly navigate users through your product, enhancing engagement and achieving results through interactive user interfaces.",
         },
         {
           icon: "dev-ops",

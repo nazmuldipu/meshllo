@@ -11,7 +11,7 @@ const AboutUs = () => {
       <div className="relative max-w-screen-lg xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-24">
         <div className="grid gap-4 md:gap-14 md:grid-cols-2 px-4">
           <div className={style["meshllo__about_image"]}>
-            <Image
+            {/* <Image
               className=" rounded-3xl opacity-30 absolute top-0 left-0"
               src="/hero_3.jpg"
               alt="Hero Image 3"
@@ -24,10 +24,10 @@ const AboutUs = () => {
               alt="Hero Image 3"
               width={500}
               height={500}
-            />
+            /> */}
             <Image
-              className=" rounded-3xl absolute top-10 md:top-20 left-10 md:left-20"
-              src="/about_1.jpg"
+              className="rounded-3xl w-full"
+              src="/aboutUs.png"
               alt="Hero Image 3"
               width={500}
               height={500}

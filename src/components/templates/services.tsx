@@ -8,6 +8,7 @@ import WebAppIcon from "../icons/WebAppIcon";
 import WebsiteIcon from "../icons/WebsiteIcon";
 import UXIcon from "../icons/UXIcon";
 import UIIcon from "../icons/UIIcon";
+import UiUxIcon from "../icons/UiUxIcon";
 import DevOpsIcon from "../icons/DevOpsIcon";
 import SQAICon from "../icons/SQAIcon";
 import GraphicsDesignIcon from "../icons/GraphicsDesignIcon";
@@ -29,6 +30,8 @@ const Services = () => {
         return WebAppIcon;
       case "web-site":
         return WebsiteIcon;
+      case "ui-ux":
+        return UiUxIcon;
       case "ux":
         return UXIcon;
       case "ui":
@@ -57,7 +60,7 @@ const Services = () => {
             title={data.title}
             subtitle={data.subtitle}
           />
-          <div className="flex flex-wrap gap-8 justify-center py-10 md:py-20">
+          <div className="service-container">
             {data.content.data.map((item, index) => (
               <ServiceCard
                 key={item.text}

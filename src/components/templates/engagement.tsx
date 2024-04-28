@@ -28,32 +28,32 @@ const Engagement = () => {
           <SectionHeader title={data.title} subtitle={data.subtitle} />
           <div className={style["meshllo__engagement-content"]}>
             <div className={style["meshllo__engagement-image"]}>
-              {data.images.map((item, index) => (
+              <Image
+                className="order-2 rounded-3xl flex-shrink-0 xl:w-125"
+                src={data.image.src}
+                style={{
+                  objectFit: "cover",
+                }}
+                alt="Hero Image 3"
+                width={286}
+                height={345}
+              />
+              {data.info.map((item, index) => (
                 <div
-                  className={`flex gap-2 md:gap-4 ${
-                    index % 2 === 0 ? "" : " -mt-20"
+                  className={`absolute md:gap-4 ${
+                    index % 2 === 0 ? "top-20 right-0" : "bottom-20 left-0"
                   }`}
-                  key={item.alt}
+                  key={item.text}
                 >
-                  <Image
-                    className="order-2 rounded-3xl flex-shrink-0"
-                    src={item.src}
-                    style={{
-                      objectFit: "cover",
-                    }}
-                    alt="Hero Image 3"
-                    width={286}
-                    height={345}
-                  />
                   <div
-                    className={`flex flex-col items-center justify-center w-1/4 text-center ${
+                    className={`flex flex-col items-center justify-center w-36 xl:w-40 text-center ${
                       index % 2 === 0 ? "order-3" : "order-1"
                     }`}
                   >
                     <h3 className="font-serif text-2xl xl:text-6xl font-bold">
                       {item.number}
                     </h3>
-                    <div className="font-sans text-sm md:text-lg tracking-wide">
+                    <div className="font-sans text-sm xl:text-base tracking-wide">
                       {parse(item.text)}
                     </div>
                   </div>
