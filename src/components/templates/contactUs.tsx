@@ -13,6 +13,10 @@ import LogoIcon from "../icons/LogoIcon";
 const ContactUs = () => {
   const data = Data.contactUs;
 
+  const access_key = process.env.NEXT_PUBLIC_FORM_ACCESS_KEY;
+  const replyto = process.env.NEXT_PUBLIC_FORM_REPLY_TO;
+  const redirect = process.env.NEXT_PUBLIC_FORM_REDIRECT_URL;
+
   const getIcon = (icon: string) => {
     switch (icon) {
       case "email":
@@ -90,7 +94,8 @@ const ContactUs = () => {
           </div>
         </div>
         <form
-          action=""
+          action="https://api.web3forms.com/submit"
+          method="POST"
           className="order-1 md:order-2 bg-white rounded-2xl p-4 md:p-10 text-main-text font-light lg:col-span-3 xl:col-span-1"
         >
           <SVGIcon
@@ -99,6 +104,21 @@ const ContactUs = () => {
             width={220}
             pathClassName="text-secondary-text"
           />
+          <input type="hidden" name="access_key" value={access_key} />
+          <input
+            type="hidden"
+            name="subject"
+            value="New Contact Form Submission"
+          />
+          <input type="hidden" name="from_name" value="Meshllo contact form" />
+          <input type="hidden" name="replyto" value={replyto} />
+          <input
+            type="checkbox"
+            name="botcheck"
+            id=""
+            style={{ display: "none" }}
+          />
+          <input type="hidden" name="redirect" value={redirect} />
           <div className="grid md:grid-cols-2 gap-4 md:gap-14 py-4 md:py-10">
             {data.form.map((item, index) => (
               <div
@@ -137,6 +157,8 @@ const ContactUs = () => {
                   )}
                   {item.type === "textarea" && (
                     <textarea
+                      name={item.name}
+                      id={item.name}
                       className="block w-full border-b p-2 text-accent-text"
                       rows={2}
                       style={{ resize: "none" }}
