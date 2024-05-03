@@ -175,17 +175,17 @@ const Data = {
         {
           icon: "facebook",
           title: "Facebook",
-          href: "https://www.facebook.com",
+          href: "https://www.facebook.com/profile.php?id=61558732277931",
         },
         {
           icon: "linkedin",
           title: "Linkedin",
-          href: "https://www.facebook.com",
+          href: "https://www.linkedin.com/company/meshllo/",
         },
         {
           icon: "instagram",
           title: "Instagram",
-          href: "https://www.facebook.com",
+          href: "https://www.linkedin.com/company/meshllo/",
         },
       ],
     },
