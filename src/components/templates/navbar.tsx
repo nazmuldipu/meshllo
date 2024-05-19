@@ -50,7 +50,7 @@ const Navbar = () => {
           {nav.links.map((link, index) => (
             <Link
               href={link.href}
-              className="flex items-center hover:text-primary"
+              className="flex items-center text-meshllo"
               key={link.href}
             >
               {link.name}
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
         <Link
           href={nav.contactUs.href}
-          className="hidden md:flex items-center bg-accent hover:bg-meshllo text-20 text-secondary px-4 py-2 rounded-full  cursor-pointer"
+          className="hidden md:flex items-center bg-meshllo hover:bg-primary text-20 text-secondary px-4 py-2 rounded-full  cursor-pointer"
         >
           {nav.contactUs.name}
         </Link>
