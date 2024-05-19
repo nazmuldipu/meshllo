@@ -99,7 +99,8 @@
   margin: -5px;
 }
 
-.text-meshllo:hover {
+.text-meshllo:hover,
+.text-gradient {
   background: -webkit-linear-gradient(0deg, #711ee2 0%, #ff585d 100.14%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

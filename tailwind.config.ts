@@ -41,6 +41,9 @@ const config: Config = {
         "430": "107.5rem",
         "3.5xl": "52rem",
       },
+      spacing: {
+        "12.5": "3.125rem",
+      },
     },
   },
   plugins: [],

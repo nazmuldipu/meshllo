@@ -126,8 +126,7 @@
 
 /* --------------------Engagement styles-------------------- */
 .meshllo__engagement-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 16px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -163,7 +162,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
   .meshllo__engagement-content {
-    flex-direction: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -186,7 +185,8 @@
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .meshllo__engagement-content {
-    gap: 48px;
+    gap: 16px;
+    padding: 0;
   }
   .meshllo__engagement-image {
     max-width: 500px;
