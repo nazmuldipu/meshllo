@@ -41,7 +41,8 @@ const Data = {
   engagement: {
     title: "How Meshllo Works",
     subtitle: "Our Engagement Model",
-    dialog: "Want to know more? Leave us a message and we will call you.",
+    dialog:
+      "Want to know more? <br /> Leave us a message and we will call you.",
     details: "",
     info: [
       { number: "100+", text: "Projects Completed" },

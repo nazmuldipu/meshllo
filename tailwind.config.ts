@@ -29,6 +29,7 @@ const config: Config = {
         "accent-text": "var(--accent-text)",
         "accent-light": "var(--accent-light)",
         tertiary: "var(--tertiary)",
+        background: "var(--background)",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)"],
@@ -43,6 +44,7 @@ const config: Config = {
       },
       spacing: {
         "12.5": "3.125rem",
+        "92.5": "23.125rem",
       },
     },
   },

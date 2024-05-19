@@ -1,4 +1,5 @@
 import Data from "@/data/data";
+import Image from "next/image";
 import SectionHeader from "../molecules/SectionHeader";
 import SVGIcon from "../icons/SVGIcon";
 import style from "@/styles/styles.module.css";
@@ -21,9 +22,9 @@ const Engagement = () => {
     }
   };
   return (
-    <section className="" id="engagement">
+    <section id="engagement">
       <div className="bg-secondary">
-        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-48">
+        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 lg:pb-20 xl:pb-48">
           <SectionHeader title={data.title} subtitle={data.subtitle} />
           <div className={style["meshllo__engagement-content"]}>
             <h3 className="px-2 md:px-0 text-center md:text-left max-w-96 md:max-w-none self-center justify-self-center font-serif font-light text-4xl md:text-5xl lg:text-7xl xl:text-8xl !leading-tight text-gradient">
@@ -56,15 +57,26 @@ const Engagement = () => {
           </div>
         </div>
       </div>
-      <div className="-mt-40 md:-mt-24 lg:-mt-28 xl: px-4 max-w-screen-md xl:max-w-screen-xl mx-auto">
-        <div className={style["meshllo__engagement-lets-talk"]}>
-          <h3 className="font-serif font-semibold text-xl md:text-3xl xl:text-5xl xl:leading-snug text-white text-center">
-            {data.dialog}
-          </h3>
-          <div className="bg-secondary text-xl font-medium font-sans px-8 py-2 rounded-full mt-6">
-            <Link href="mailto:nazmul@meshllo.com" className="text-meshllo">
-              {data.cta}
-            </Link>
+      <div className="relative h-64 md:h-56 lg:h-72 xl:h-92.5">
+        <div className="w-full h-full bg-background">
+          <Image
+            className="w-full h-full opacity-10"
+            src="/programming-background-with-html.png"
+            alt="Hero Image 3"
+            style={{ objectFit: "cover" }}
+            width={1920}
+            height={370}
+          />
+        </div>
+
+        <div className="absolute top-0 w-full h-full text-white">
+          <div className="flex flex-col w-full h-full px-4 items-center justify-center">
+            <h3 className="font-serif font-extralight text-xl md:text-3xl xl:text-5xl xl:leading-tight text-center">
+              {parse(data.dialog)}
+            </h3>
+            <div className="bg-meshllo hover:bg-primary text-xl font-sans px-6 py-2.5 rounded-full mt-8">
+              <Link href="mailto:nazmul@meshllo.com">{data.cta}</Link>
+            </div>
           </div>
         </div>
       </div>
