@@ -15,7 +15,7 @@ const ContentWrapper = ({
   return (
     <section className={`${background}`} id={id}>
       <div
-        className={`md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl mx-4 md:mx-auto ${className}`}
+        className={`max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto py-16 md:py-24 lg:py-32 xl:py-36 ${className}`}
       >
         {children}
       </div>

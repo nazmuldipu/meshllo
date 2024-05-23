@@ -24,7 +24,7 @@ const Engagement = () => {
   return (
     <section id="engagement">
       <div className="bg-secondary">
-        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto pt-10 md:pt-20 lg:pt-32 lg:pb-20 xl:pb-48">
+        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto py-16 md:py-24 lg:py-32 xl:py-36">
           <SectionHeader title={data.title} subtitle={data.subtitle} />
           <div className={style["meshllo__engagement-content"]}>
             <h3 className="px-2 md:px-0 text-center md:text-left max-w-96 md:max-w-none self-center justify-self-center font-serif font-light text-4xl md:text-5xl lg:text-7xl xl:text-8xl !leading-tight text-gradient">

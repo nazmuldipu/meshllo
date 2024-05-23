@@ -54,7 +54,7 @@ const Services = () => {
   return (
     <section className="px-4" id="services">
       <div className="bg-white pt-12 md:pt-0">
-        <div className="max-w-screen-md xl:max-w-screen-2xl mx-auto pt-10 md:pt-20 lg:pt-32 pb-12 md:pb-24">
+        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-2xl mx-auto py-16 md:py-24 lg:py-32 xl:py-36">
           <SectionHeader
             details={data.details}
             title={data.title}

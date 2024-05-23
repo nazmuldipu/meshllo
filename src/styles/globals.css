@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
   grid-gap: 32px;
-  padding: 40px 0;
+  /* padding: 40px 0; */
   justify-content: center;
 }
 .service-card {

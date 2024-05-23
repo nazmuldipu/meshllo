@@ -15,6 +15,7 @@
 .meshllo__hero-content {
   grid-area: content;
   color: white;
+  align-self: center;
 }
 .meshllo__hero-main-text {
   font-family: var(--font-roboto-serif);
@@ -25,10 +26,10 @@
 }
 .meshllo__hero_image {
   grid-area: image;
-  min-width: 35vw;
+  min-width: 40vw;
   position: relative;
   min-height: 100vw;
-  /* margin-right: 80px; */
+  display: flex;
 }
 .meshllo__about_image {
   max-width: 90vw;
@@ -68,11 +69,11 @@
     padding-top: 3rem;
   }
   .meshllo__hero-main-text {
-    font-size: 26px;
+    font-size: 25px;
     line-height: 36px;
   }
   .meshllo__hero_image {
-    min-width: 40vw;
+    min-width: 37vw;
     min-height: 40vw;
   }
   .meshllo__about_image {
@@ -85,31 +86,30 @@
 }
 @media screen and (min-width: 900px) {
   .meshllo__hero-main-text {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 38px;
   }
 }
 @media screen and (min-width: 1024px) {
   .meshllo__hero-main-text {
-    font-size: 40px;
+    font-size: 42px;
     line-height: 48px;
   }
 }
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .meshllo__hero-template {
-    padding-left: 6rem;
+    /* padding-left: 6rem;
     padding-right: 6rem;
-    padding-top: 9rem;
+    padding-top: 2.75rem;
+    padding-bottom: 42px; */
+    padding: 42px 6rem;
   }
   .meshllo__hero-main-text {
-    font-size: 47px;
-    line-height: 62px;
+    font-size: 52px;
+    line-height: 64px;
   }
-  .meshllo__hero_image {
-    min-width: 400px;
-    min-height: 35vh;
-  }
+
   .meshllo__about_image {
     min-width: 500px;
     min-height: 5vh;

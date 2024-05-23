@@ -8,7 +8,7 @@ const Hero = () => {
   const data = Data.hero;
   return (
     <div
-      className="pt-8 md:pt-12 max-w-430 mx-auto px-2 pb-4 md:pb-20 lg:pb-32 xl:pb-40"
+      className="pt-8 md:pt-7 max-w-430 mx-auto pb-4 md:pb-20 lg:pb-32 xl:pb-36"
       id="home"
     >
       <div className={style["meshllo__hero-template"]}>
@@ -16,7 +16,7 @@ const Hero = () => {
           <h3 className={style["meshllo__hero-main-text"]}>
             {parse(data.title)}
           </h3>
-          <p className="font-sans md:text-20 py-10 max-w-2xl md:max-w-md lg:max-w-xl 2xl:max-w-3xl ">
+          <p className="font-sans 2xl:text-1.5xl py-6 max-w-2xl md:max-w-md lg:max-w-xl 2xl:max-w-3xl ">
             {parse(data.dialog)}
           </p>
           <ButtonAnimate text="Let’s Connect" />
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         <div className={style["meshllo__hero_image"]}>
           <Image
-            className=" rounded-3xl absolute top-0 left-0 w-full"
+            className="rounded-3xl w-full self-center"
             src="/home.png"
             alt="Hero Image 3"
             width={500}

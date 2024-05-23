@@ -36,6 +36,7 @@ const config: Config = {
         serif: ["var(--font-roboto-serif)"],
       },
       fontSize: {
+        "1.5xl": "1.375rem",
         "6.5xl": "4rem",
       },
       maxWidth: {
