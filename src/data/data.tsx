@@ -248,6 +248,20 @@ const Data = {
       header: "",
       data: [],
     },
+    links: [
+      {
+        name: "Career",
+        href: "#career",
+      },
+      {
+        name: "Terms of service",
+        href: "#terms_of_service",
+      },
+      {
+        name: "Privacy policy",
+        href: "#privacy_policy",
+      },
+    ],
   },
   feedback: {
     title: "Appreciations From Our Client",

@@ -182,13 +182,12 @@
 /* ------------ Footer ------------- */
 .meshllo__title {
   font-family: var(--font-roboto-serif);
-  font-size: 24px;
+  font-size: 36px;
   line-height: 120%;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0em;
 }
 .meshllo__regular-text {
-  font-family: var(--font-roboto-sans);
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
@@ -196,7 +195,7 @@
 }
 @media screen and (min-width: 768px) {
   .meshllo__title {
-    font-size: 36px;
+    font-size: 48px;
   }
   .meshllo__regular-text {
     font-size: 18px;
@@ -204,7 +203,7 @@
 }
 @media screen and (min-width: 1024px) {
   .meshllo__title {
-    font-size: 48px;
+    font-size: 60px;
   }
   .meshllo__regular-text {
     font-size: 20px;
@@ -212,7 +211,7 @@
 }
 @media screen and (min-width: 1280px) {
   .meshllo__title {
-    font-size: 64px;
+    font-size: 96px;
   }
   .meshllo__regular-text {
     font-size: 24px;
