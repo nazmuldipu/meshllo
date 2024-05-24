@@ -3,13 +3,15 @@ interface Props {
   title: string;
   subtitle: string;
   details?: string;
-  textAlignment?: "left" | "center" | "right";
+  textAlignment?: "left" | "center" | "right" | "justify";
+  detailsAlignment?: "left" | "center" | "right" | "justify";
 }
 const SectionHeader = ({
   title,
   subtitle,
   details,
   textAlignment = "center",
+  detailsAlignment = "center",
 }: Props) => {
   const getTextAlignment = (alignment: string) => {
     switch (alignment) {
@@ -19,17 +21,20 @@ const SectionHeader = ({
         return "text-center";
       case "right":
         return "text-right";
+      case "justify":
+        return "text-justify";
       default:
         return "text-center";
     }
   };
+
   return (
     <div className=" max-w-4xl mx-auto">
       <div className="flex flex-col items-center max-w-3xl mx-auto pb-2 md:pb-4 lg:pb-8">
         <h3
           className={`${getTextAlignment(
             textAlignment
-          )} w-full font-serif text-lg md:text-2xl lg:text-3xl font-semibold text-accent`}
+          )} w-full font-serif text-lg md:text-xl lg:text-3xl font-semibold text-accent`}
         >
           {subtitle}
         </h3>
@@ -44,8 +49,8 @@ const SectionHeader = ({
         {details && (
           <p
             className={`font-sans ${getTextAlignment(
-              textAlignment
-            )} text-sm md:text-xl pt-4 md:pt-6 lg:pt-8`}
+              detailsAlignment
+            )} text-sm md:text-base lg:text-xl pt-4 md:pt-6 lg:pt-8`}
           >
             {details}
           </p>

@@ -33,14 +33,10 @@
 }
 .meshllo__about_image {
   max-width: 90vw;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  /* position: relative; */
-  /* height: 380px; */
   align-self: center;
-  /* min-height: 95vw; */
-  /* min-height: 100vw; */
-  /* margin-right: 40px; */
 }
 @media screen and (min-width: 375px) {
   .meshllo__hero-main-text {
@@ -76,13 +72,6 @@
     min-width: 37vw;
     min-height: 40vw;
   }
-  .meshllo__about_image {
-    min-width: 35vw;
-    /* min-height: 35vw; */
-    /* height: 350px; */
-
-    /* margin-right: 80px; */
-  }
 }
 @media screen and (min-width: 900px) {
   .meshllo__hero-main-text {
@@ -108,13 +97,6 @@
   .meshllo__hero-main-text {
     font-size: 52px;
     line-height: 64px;
-  }
-
-  .meshllo__about_image {
-    min-width: 500px;
-    min-height: 5vh;
-    /* height: 580px; */
-    align-self: center;
   }
 }
 @media screen and (min-width: 1536px) {

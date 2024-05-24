@@ -44,14 +44,12 @@ const ContactUs = () => {
     >
       <div className="grid lg:grid-cols-5 xl:grid-cols-2 gap-8">
         <div className="order-2 md:order-1 lg:col-span-2 xl:col-span-1">
-          <div className="pb-4 border-b border-border">
-            <SectionHeader
-              title={data.title}
-              subtitle={data.subtitle}
-              textAlignment="left"
-            />
-          </div>
-          <div className="py-6 md:py-10 border-b border-border">
+          <SectionHeader
+            title={data.title}
+            subtitle={data.subtitle}
+            textAlignment="left"
+          />
+          <div className="pb-6 md:pb-10">
             {data.content.data.map((item, index) => (
               <div key={item.text} className="flex gap-6 py-3 md:py-4">
                 <div className="bg-meshllo w-12 h-12 rounded-full flex justify-center items-center shrink-0">
@@ -168,7 +166,7 @@ const ContactUs = () => {
               </div>
             ))}
             <button
-              className="bg-meshllo text-xl font-medium font-sans text-white py-3 px-14 rounded-full"
+              className="col-span-2 bg-meshllo hover:bg-primary text-xl font-medium font-sans text-white py-3 px-14 rounded-full"
               type="submit"
             >
               Submit
