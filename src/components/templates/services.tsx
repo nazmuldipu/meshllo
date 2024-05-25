@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Data from "@/data/data";
 import SectionHeader from "../molecules/SectionHeader";
 import ServiceCard from "../molecules/ServiceCard";
@@ -23,6 +24,7 @@ import DeployIcon from "../icons/DeployIcon";
 
 const Services = () => {
   const data = Data.services;
+  const [isMobile, setIsMobile] = useState(false);
 
   const getIcon = (icon: string): React.ElementType => {
     switch (icon) {
@@ -67,6 +69,13 @@ const Services = () => {
         return ItConsultantIcon;
     }
   };
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const width = window.innerWidth;
+      setIsMobile(width < 768 ? true : false);
+    }
+  }, []);
+
   return (
     <section className="px-4" id="services">
       <div className="bg-white pt-12 md:pt-0">
@@ -77,18 +86,37 @@ const Services = () => {
             title={data.title}
             subtitle={data.subtitle}
           />
-          <div className=" max-w-5xl mx-auto flex justify-between items-center py-20">
-            {data.flow.map((item, index) => (
-              <div className="grid gap-6" key={`service-flow-${index}`}>
-                <SVGIcon
-                  icon={getIcon(item.icon)}
-                  size={item.icon === "arrow" ? 32 : 80}
-                />
-                <div className=" font-sans text-accent-text text-center">
-                  {item.text ?? ""}
+          <div className=" max-w-5xl mx-auto  py-20">
+            <div className="px-2 md:px-8 flex justify-between items-center">
+              {data.flow.map((item, index) => (
+                <div
+                  className={`grid ${
+                    isMobile ? "gap-1" : "gap-6"
+                  } justify-items-center`}
+                  key={`service-flow-${index}`}
+                >
+                  <SVGIcon
+                    icon={getIcon(item.icon)}
+                    size={
+                      isMobile
+                        ? item.icon === "arrow"
+                          ? 18
+                          : 40
+                        : item.icon === "arrow"
+                        ? 32
+                        : 80
+                    }
+                  />
+                  <div
+                    className={`font-sans text-accent-text text-center ${
+                      isMobile ? "text-sm" : ""
+                    }`}
+                  >
+                    {item.text ?? ""}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
           <div className="service-container">
             {data.content.data.map((item, index) => (
