@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <section className="bg-background text-white" id="about">
       <div className="relative max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto py-16 md:py-24 lg:py-32 xl:py-36">
-        <div className="grid md:grid-cols-2 px-4">
+        <div className="grid md:grid-cols-7 px-4">
           <div className={style["meshllo__about_image"]}>
             <Image
               className="rounded-3xl w-full"
@@ -19,7 +19,7 @@ const AboutUs = () => {
               height={500}
             />
           </div>
-          <article className="pl-4 xl:pl-8">
+          <article className="pl-4 xl:pl-8 md:col-span-3">
             <SectionHeader
               title={data.title}
               subtitle={data.subtitle}

@@ -29,7 +29,9 @@ const ServiceCard = ({ title, text, icon }: Props) => {
               size={28}
               pathClassName="text-white"
             />
-            Want Quotation?
+            <span className="text-gradient text-xl font-medium">
+              Want Quotation?
+            </span>
           </div>
         </Link>
       </div>

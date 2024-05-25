@@ -86,6 +86,11 @@ const Data = {
         },
         {
           icon: "cloud",
+          title: "AI/ ML",
+          text: "Struggling with adoption, updates, or just running your cloud solutions?  We'll assure the best cloud services for you – AWS, Azure, GCP, you name it!",
+        },
+        {
+          icon: "cloud",
           title: "Cloud Services",
           text: "Struggling with adoption, updates, or just running your cloud solutions?  We'll assure the best cloud services for you - AWS, Azure, GCP, you name it!",
         },
