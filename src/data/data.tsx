@@ -136,12 +136,21 @@ const Data = {
         },
       ],
     },
+    flow: [
+      { icon: "discover", text: "Discover" },
+      { icon: "arrow", text: "" },
+      { icon: "design", text: "Design" },
+      { icon: "arrow", text: "" },
+      { icon: "develop", text: "Develop" },
+      { icon: "arrow", text: "" },
+      { icon: "deploy", text: "Deploy" },
+    ],
   },
   aboutUs: {
     title: "The Core Mission Behind All Our Work",
     subtitle: "About Us",
     details:
-      "With over 15 years of experience in transforming business in the digital realm, Meshllo was founded with the core mission of solving problems and empowering people through technology. We started with just a 4 person team, but our dedication to creating exceptional software solutions fueled our growth to having a team of 150+ brilliant minds crafting exceptional software products and micro service-enabled platforms for businesses of all sizes. We have worked with various organizations over the globe spanning over US, Canada, UAE, and Australia. Our vision is to become the fastest digital transformation and innovation partner, building a global network of talent to create a lasting positive impact.",
+      "With over 5 years of experience in transforming business in the digital realm, Meshllo was founded with the core mission of solving problems and empowering people through technology. We started with just a 4 person team, but our dedication to creating exceptional software solutions fueled our growth to having a team of 150+ brilliant minds crafting exceptional software products and micro service-enabled platforms for businesses of all sizes. We have worked with various organizations over the globe spanning over US, Canada, UAE, and Australia. Our vision is to become the fastest digital transformation and innovation partner, building a global network of talent to create a lasting positive impact.",
     dialog: "Want to know more about us?",
     content: {
       header: "We reached here with our hard work and dedication",

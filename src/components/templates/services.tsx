@@ -14,6 +14,12 @@ import SQAICon from "../icons/SQAIcon";
 import GraphicsDesignIcon from "../icons/GraphicsDesignIcon";
 import DigitalMarketingIcon from "../icons/DigitalMarketingIcon";
 import ItConsultantIcon from "../icons/ItConsultantIcon";
+import SVGIcon from "../icons/SVGIcon";
+import DiscoverIcon from "../icons/DiscoverIcon";
+import RightArrowIcon from "../icons/RightArrowIcon";
+import DesignIcon from "../icons/DesignIcon";
+import DevelopIcon from "../icons/DevelopIcon";
+import DeployIcon from "../icons/DeployIcon";
 
 const Services = () => {
   const data = Data.services;
@@ -46,6 +52,16 @@ const Services = () => {
         return DigitalMarketingIcon;
       case "it-consultant":
         return ItConsultantIcon;
+      case "discover":
+        return DiscoverIcon;
+      case "arrow":
+        return RightArrowIcon;
+      case "design":
+        return DesignIcon;
+      case "develop":
+        return DevelopIcon;
+      case "deploy":
+        return DeployIcon;
 
       default:
         return ItConsultantIcon;
@@ -57,9 +73,23 @@ const Services = () => {
         <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-2xl mx-auto py-16 md:py-24 lg:py-32 xl:py-36">
           <SectionHeader
             details={data.details}
+            detailsTextColor="text-accent-text pb-8"
             title={data.title}
             subtitle={data.subtitle}
           />
+          <div className=" max-w-5xl mx-auto flex justify-between items-center py-20">
+            {data.flow.map((item, index) => (
+              <div className="grid gap-6" key={`service-flow-${index}`}>
+                <SVGIcon
+                  icon={getIcon(item.icon)}
+                  size={item.icon === "arrow" ? 32 : 80}
+                />
+                <div className=" font-sans text-accent-text text-center">
+                  {item.text ?? ""}
+                </div>
+              </div>
+            ))}
+          </div>
           <div className="service-container">
             {data.content.data.map((item, index) => (
               <ServiceCard

@@ -33,14 +33,14 @@ const Footer = () => {
                 {data.subtitle}{" "}
                 <Link
                   href={`mailto:${contact.email}`}
-                  className=" text-tertiary"
+                  className="text-tertiary text-meshllo"
                 >
                   {contact.email}
                 </Link>{" "}
                 or{" "}
                 <Link
                   href={`https://wa.me/${contact.phone}`}
-                  className="text-tertiary"
+                  className="text-tertiary text-meshllo"
                 >
                   WhatsApp
                 </Link>
@@ -59,10 +59,7 @@ const Footer = () => {
               <ul className="flex gap-4">
                 {data.links.map((link, index) => (
                   <li key={index}>
-                    <Link
-                      href={link.href}
-                      className=" text-white hover:text-accent"
-                    >
+                    <Link href={link.href} className=" text-white text-meshllo">
                       {link.name}
                     </Link>
                   </li>
@@ -73,36 +70,6 @@ const Footer = () => {
         </div>
       </div>
     </>
-    //   <ContentWrapper
-    //     background="bg-primary text-white font-sans"
-    //     className="pt-10 md:pt-16 lg:pt-20 pb-4 "
-    //   >
-    //     <div className="flex justify-center pb-6 border-b">
-    //       <div className="text-center lg:text-left">
-    //         <h3 className={`${styles["meshllo__title"]} pb-2`}>{data.title}</h3>
-    //         <div className={styles["meshllo__regular-text"]}>
-    //           <span>
-    //             {data.subtitle}{" "}
-    //             <Link href={`mailto:${contact.email}`} className=" text-accent">
-    //               {contact.email}
-    //             </Link>{" "}
-    //             or{" "}
-    //             <Link
-    //               href={`https://wa.me/${contact.phone}`}
-    //               className=" text-accent"
-    //             >
-    //               WhatsApp
-    //             </Link>
-    //             {data.dialog}
-    //           </span>
-    //         </div>
-    //       </div>
-    //       {/* <div className="flex justify-center lg:justify-end">
-    //         <SubscribeForm />
-    //       </div> */}
-    //     </div>
-
-    //   </ContentWrapper>
   );
 };
 
