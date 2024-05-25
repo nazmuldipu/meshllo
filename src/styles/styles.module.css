@@ -88,21 +88,25 @@
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .meshllo__hero-template {
-    /* padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 2.75rem;
-    padding-bottom: 42px; */
     padding: 42px 6rem;
   }
   .meshllo__hero-main-text {
     font-size: 52px;
     line-height: 64px;
   }
+  .meshllo__hero_image {
+    min-width: 34vw;
+    min-height: 40vw;
+  }
 }
 @media screen and (min-width: 1536px) {
   .meshllo__hero-main-text {
     font-size: 64px;
     line-height: 75px;
+  }
+  .meshllo__hero_image {
+    min-width: 35vw;
+    min-height: 40vw;
   }
 }
 
