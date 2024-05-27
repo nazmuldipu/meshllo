@@ -21,6 +21,8 @@ import RightArrowIcon from "../icons/RightArrowIcon";
 import DesignIcon from "../icons/DesignIcon";
 import DevelopIcon from "../icons/DevelopIcon";
 import DeployIcon from "../icons/DeployIcon";
+import AiMlIcon from "../icons/AiMlIcon";
+import Image from "next/image";
 
 const Services = () => {
   const data = Data.services;
@@ -32,6 +34,8 @@ const Services = () => {
         return CustomSoftwareIcon;
       case "cloud":
         return CloudIcon;
+      case "aiml":
+        return AiMlIcon;
       case "mobile-app":
         return MobileAppIcon;
       case "web-app":
@@ -86,6 +90,7 @@ const Services = () => {
             title={data.title}
             subtitle={data.subtitle}
           />
+
           <div className=" max-w-5xl mx-auto  py-20">
             <div className="px-2 md:px-8 flex justify-between items-center">
               {data.flow.map((item, index) => (

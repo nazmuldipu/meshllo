@@ -85,9 +85,9 @@ const Data = {
           text: "We create diverse and complex software solutions for any business need. We will transform your ideas into reality from scratch.",
         },
         {
-          icon: "cloud",
+          icon: "aiml",
           title: "AI/ ML",
-          text: "Struggling with adoption, updates, or just running your cloud solutions?  We'll assure the best cloud services for you – AWS, Azure, GCP, you name it!",
+          text: "Transform data into actionable insights with our AI and ML services, driving innovation and efficiency for your business. Explore the future with us.",
         },
         {
           icon: "cloud",

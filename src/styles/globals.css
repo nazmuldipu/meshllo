@@ -31,7 +31,7 @@
   justify-content: center;
 }
 .service-card {
-  @apply bg-secondary max-w-80 grid p-7 rounded-2xl;
+  @apply bg-secondary max-w-80 flex flex-col p-7 rounded-2xl;
 }
 .service-card:hover {
   @apply md:bg-meshllo md:text-secondary;
@@ -62,7 +62,7 @@
   transition: width 2s ease-in;
 }
 .quotation-box {
-  @apply bg-secondary rounded-full flex opacity-0 w-0 text-main-text justify-center items-center h-20;
+  @apply bg-secondary rounded-full flex opacity-0 w-0 text-main-text justify-center items-center h-20 px-4;
 }
 .service-card:hover .quotation-box {
   @apply md:opacity-100 md:w-full;
