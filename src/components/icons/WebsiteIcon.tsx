@@ -13,49 +13,60 @@ export default function WebsiteIcon(props: Props): JSX.Element {
       {...rest}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        className={pathClassName ? `stroke-current ${pathClassName}` : ""}
-        d="M38.75 1.25H1.25V6.25H38.75V1.25Z"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path
-        className={pathClassName ? `stroke-current ${pathClassName}` : ""}
-        d="M3.75 6.25V28.75H36.25V6.25"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path
-        className={pathClassName ? `stroke-current ${pathClassName}` : ""}
-        d="M20 28.75V36.25"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-
-      <path
-        className={pathClassName ? `stroke-current ${pathClassName}` : ""}
-        d="M16.25 36.25H23.75"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path
-        className={pathClassName ? `stroke-current ${pathClassName}` : ""}
-        d="M8.75 12.5H21.25"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path
-        className={pathClassName ? `stroke-current ${pathClassName}` : ""}
-        d="M8.75 17.5H31.25"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path
-        className={pathClassName ? `stroke-current ${pathClassName}` : ""}
-        d="M8.75 22.5H21.25"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
+      <g clip-path="url(#clip0_1161_247)">
+        <path
+          className={pathClassName ? `stroke-current ${pathClassName}` : ""}
+          d="M39.25 1.25H1.75V6.25H39.25V1.25Z"
+          strokeWidth="2.25"
+          strokeLinejoin="round"
+        />
+        <path
+          className={pathClassName ? `stroke-current ${pathClassName}` : ""}
+          d="M4.25 6.25V28.75H36.75V6.25"
+          strokeWidth="2.25"
+          strokeLinejoin="round"
+        />
+        <path
+          className={pathClassName ? `stroke-current ${pathClassName}` : ""}
+          d="M20.5 28.75V36.25"
+          strokeWidth="2.25"
+          strokeLinejoin="round"
+        />
+        <path
+          className={pathClassName ? `stroke-current ${pathClassName}` : ""}
+          d="M16.75 36.25H24.25"
+          strokeWidth="2.25"
+          strokeLinejoin="round"
+        />
+        <path
+          className={pathClassName ? `stroke-current ${pathClassName}` : ""}
+          d="M9.25 12.5H21.75"
+          strokeWidth="2.25"
+          strokeLinejoin="round"
+        />
+        <path
+          className={pathClassName ? `stroke-current ${pathClassName}` : ""}
+          d="M9.25 17.5H31.75"
+          strokeWidth="2.25"
+          strokeLinejoin="round"
+        />
+        <path
+          className={pathClassName ? `stroke-current ${pathClassName}` : ""}
+          d="M9.25 22.5H21.75"
+          strokeWidth="2.25"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1161_247">
+          <rect
+            width="40"
+            height="40"
+            fill="white"
+            transform="translate(0.5)"
+          />
+        </clipPath>
+      </defs>
     </svg>
   );
 }

@@ -30,54 +30,56 @@ const Feedback = () => {
         details={data.details}
         textAlignment="center"
       />
-      <Swiper
-        ref={swiperRef}
-        modules={[Navigation]}
-        navigation={{
-          nextEl: ".next",
-          prevEl: ".prev",
-        }}
-        slidesPerView={6}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-        }}
-        spaceBetween={16}
-        loop={true}
-        className="mySwiper"
-      >
-        {data.content.data.map((item, index) => (
-          <SwiperSlide key={item.title} className="p-2">
-            <FeedbackCard
-              icon={item.icon}
-              title={item.title}
-              subtitle={item.subtitle}
-              text={item.text}
+      <div className="pt-14">
+        <Swiper
+          ref={swiperRef}
+          modules={[Navigation]}
+          navigation={{
+            nextEl: ".next",
+            prevEl: ".prev",
+          }}
+          slidesPerView={6}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+          }}
+          spaceBetween={16}
+          loop={true}
+          className="mySwiper"
+        >
+          {data.content.data.map((item, index) => (
+            <SwiperSlide key={item.title} className="p-2">
+              <FeedbackCard
+                icon={item.icon}
+                title={item.title}
+                subtitle={item.subtitle}
+                text={item.text}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="flex justify-center gap-8 text-white pt-8">
+          <button className="prev bg-tertiary rounded-sm p-4 hover:bg-meshllo">
+            <SVGIcon
+              icon={LeftIcon}
+              width={27}
+              height={10}
+              pathClassName="text-white"
             />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="flex justify-center gap-8 text-white pt-8">
-        <button className="prev bg-tertiary rounded-sm p-4 hover:bg-meshllo">
-          <SVGIcon
-            icon={LeftIcon}
-            width={27}
-            height={10}
-            pathClassName="text-white"
-          />
-        </button>
-        <button className="next bg-tertiary rounded-sm p-4 hover:bg-meshllo">
-          <SVGIcon
-            icon={RightIcon}
-            width={27}
-            height={10}
-            pathClassName="text-white"
-          />
-        </button>
+          </button>
+          <button className="next bg-tertiary rounded-sm p-4 hover:bg-meshllo">
+            <SVGIcon
+              icon={RightIcon}
+              width={27}
+              height={10}
+              pathClassName="text-white"
+            />
+          </button>
+        </div>
       </div>
     </ContentWrapper>
   );

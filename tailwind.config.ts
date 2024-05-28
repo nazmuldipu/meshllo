@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        primary: "var(--primary)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -28,17 +29,23 @@ const config: Config = {
         "accent-text": "var(--accent-text)",
         "accent-light": "var(--accent-light)",
         tertiary: "var(--tertiary)",
+        background: "var(--background)",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)"],
         serif: ["var(--font-roboto-serif)"],
       },
       fontSize: {
+        "1.5xl": "1.375rem",
         "6.5xl": "4rem",
       },
       maxWidth: {
         "430": "107.5rem",
         "3.5xl": "52rem",
+      },
+      spacing: {
+        "12.5": "3.125rem",
+        "92.5": "23.125rem",
       },
     },
   },

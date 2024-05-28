@@ -41,7 +41,8 @@ const Data = {
   engagement: {
     title: "How Meshllo Works",
     subtitle: "Our Engagement Model",
-    dialog: "Want to know more? Leave us a message and we will call you.",
+    dialog:
+      "Want to know more? <br /> Leave us a message and we will call you.",
     details: "",
     info: [
       { number: "100+", text: "Projects Completed" },
@@ -82,6 +83,11 @@ const Data = {
           icon: "custom-software",
           title: "Custom Software Development",
           text: "We create diverse and complex software solutions for any business need. We will transform your ideas into reality from scratch.",
+        },
+        {
+          icon: "aiml",
+          title: "AI/ ML",
+          text: "Transform data into actionable insights with our AI and ML services, driving innovation and efficiency for your business. Explore the future with us.",
         },
         {
           icon: "cloud",
@@ -135,20 +141,34 @@ const Data = {
         },
       ],
     },
+    flow: [
+      { icon: "discover", text: "Discover" },
+      { icon: "arrow", text: "" },
+      { icon: "design", text: "Design" },
+      { icon: "arrow", text: "" },
+      { icon: "develop", text: "Develop" },
+      { icon: "arrow", text: "" },
+      { icon: "deploy", text: "Deploy" },
+    ],
   },
   aboutUs: {
     title: "The Core Mission Behind All Our Work",
     subtitle: "About Us",
     details:
-      "With over 15 years of experience in transforming business in the digital realm, Meshllo was founded with the core mission of solving problems and empowering people through technology. We started with just a 4 person team, but our dedication to creating exceptional software solutions fueled our growth to having a team of 150+ brilliant minds crafting exceptional software products and micro service-enabled platforms for businesses of all sizes. We have worked with various organizations over the globe spanning over US, Canada, UAE, and Australia. Our vision is to become the fastest digital transformation and innovation partner, building a global network of talent to create a lasting positive impact.",
+      "With over 5 years of experience in transforming business in the digital realm, Meshllo was founded with the core mission of solving problems and empowering people through technology. We started with just a 4 person team, but our dedication to creating exceptional software solutions fueled our growth to having a team of 150+ brilliant minds crafting exceptional software products and micro service-enabled platforms for businesses of all sizes. We have worked with various organizations over the globe spanning over US, Canada, UAE, and Australia. Our vision is to become the fastest digital transformation and innovation partner, building a global network of talent to create a lasting positive impact.",
     dialog: "Want to know more about us?",
     content: {
-      header: "",
-      data: [],
+      header: "We reached here with our hard work and dedication",
+      data: [
+        { title: "Project Completed", text: "50+" },
+        { title: "Clients Onboard", text: "20+" },
+        { title: "We’re a family", text: "80+" },
+      ],
     },
   },
   contactUs: {
-    title: "Let your business <br/> thrive under our <br/>supervision",
+    title:
+      "Let your <span className='text-primary'> business <br/> thrive </span> under our <br/>supervision",
     subtitle: "",
     details: "",
     dialog: "",
@@ -182,11 +202,6 @@ const Data = {
           title: "Linkedin",
           href: "https://www.linkedin.com/company/meshllo/",
         },
-        {
-          icon: "instagram",
-          title: "Instagram",
-          href: "https://www.linkedin.com/company/meshllo/",
-        },
       ],
     },
     form: [
@@ -207,6 +222,10 @@ const Data = {
             value: "Custom Software Development",
             text: "Custom Software Development",
           },
+          {
+            value: "AI & Machine Learning",
+            text: "AI/ML",
+          },
           { value: "Cloud Services", text: "Cloud Services" },
           {
             value: "Mobile Application Development",
@@ -218,12 +237,8 @@ const Data = {
           },
           { value: "Website Development", text: "Website Development" },
           {
-            value: "User Experience Design (UX)",
-            text: "User Experience Design (UX)",
-          },
-          {
-            value: "User Interface Design (UI)",
-            text: "User Interface Design (UI)",
+            value: "UI & UX Design",
+            text: "UI & UX Design",
           },
           { value: "DevOps", text: "DevOps" },
           {
@@ -247,6 +262,20 @@ const Data = {
       header: "",
       data: [],
     },
+    links: [
+      {
+        name: "Career",
+        href: "#career",
+      },
+      {
+        name: "Terms of service",
+        href: "#terms_of_service",
+      },
+      {
+        name: "Privacy policy",
+        href: "#privacy_policy",
+      },
+    ],
   },
   feedback: {
     title: "Appreciations From Our Client",
@@ -265,7 +294,7 @@ const Data = {
         {
           icon: "MK",
           title: "Monish Kumar",
-          subtitle: "Managing Director, Zedandzed It Services Ltd, UK",
+          subtitle: "Managing Director, Maritime Ltd., UK",
           text: "It’s been a long time I am working with you, I must say you have a great work ethics. Best wishes to your team.",
         },
         {
